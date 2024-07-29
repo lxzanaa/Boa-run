@@ -3,17 +3,22 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-body{
+
+body {
     font-family: "Montserrat", sans-serif;
 }
-.button-shadow{
+
+.button-shadow {
     box-shadow: 0px 4px 4px 0px #00000040;
     transition: .3s ease-in-out;
 }
-.button-shadow:hover{
+
+.button-shadow:hover {
     transform: scale(1.02);
 }
-.button-shadow:active{
+
+.button-shadow:active {
     transform: scale(0.95);
     box-shadow: none;
 }
+
