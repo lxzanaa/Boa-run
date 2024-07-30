@@ -33,3 +33,43 @@ body {
 button{
     cursor: pointer;
 }
+.open-modal-tel{
+    display: none !important;
+}
+.machines_are_compatible-open{
+    display: none !important;
+}
+@media (max-width: 455px) {
+    .header-content{
+        display: flex;
+        flex-direction: column;
+    }
+    #open-modal-tel{
+        display: none;
+    }
+    .open-modal-tel{
+        display: block !important;
+    }
+    .header__container{
+        margin-bottom: 10px;
+    }
+    .machines_are_compatible{
+        display: none !important;
+    }
+    .machines_are_compatible-open{
+        display: grid !important;
+    }
+    .Strength_by_Rockwell{
+        display: flex !important;
+        flex-direction: column !important;
+        margin-bottom: 15px !important;
+    }
+    .Strength_by_Rockwell .mini-con{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        bottom: -15px;
+    }
+    .Strength_by_Rockwell .container{
+        padding: 10px !important;
+    }
+}
