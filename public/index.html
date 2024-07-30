@@ -551,8 +551,8 @@
         <a class="button-shadow text-[#F4F4F4] font-medium text-xs px-8 py-2 bg-[#873003] rounded-[10px]"
           href="#">Оставить отзыв</a>
       </p>
-      <div class="flex items-center justify-between">
-        <div>
+      <div class="grid grid-cols-7 justify-between">
+        <div class="col-span-4" >
           <div>
             <div class="relative max-w-[598px] w-full max-h-[324px] h-full bg-[#FFCC00] rounded-[10px] mb-6">
               <video id="video" class="w-full h-full object-cover rounded-[10px]" src="./video/example.mp4"></video>
@@ -602,9 +602,46 @@
             </button>
           </div>
         </div>
-        <div>
-          <img src="./img/client/Group.png" alt="client">
+        <div  class="col-span-3">
+          <img class="max-w-[471px] w-full" src="./img/client/Group.png" alt="client">
         </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="max-w-[1147px] px-5 mx-auto flex items-center justify-between gap-5">
+      <div>
+        <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-4">Доставка и оплата</h2>
+        <p class="text-black font-medium text-2xl ">Удобные виды доставки</p>
+        <div class="relative">
+          <img class="max-w-[387px] w-full h-[494px] object-cover mb-9" src="./img/delivery.png" alt="delivery">
+          <div class="absolute text-black text-lg px-2 py-1 rounded-[10px] bg-[#FFCC00] bottom-[92px] right-0">
+            Курьерская доставка</div>
+        </div>
+        <h3 class="text-black font-medium text-2xl mb-8">Любые способы оплаты</h3>
+        <ul class="list-disc pl-5">
+          <li class="text-black text-lg">Наличными курьеру при получении</li>
+          <li class="text-black text-lg">Переводом Сбербанк при получении</li>
+          <li class="text-black text-lg">Картой на сайте (без учета стоимости доставки)</li>
+          <li class="text-black text-lg">Безналичный расчет (банковские реквизиты)</li>
+          <li class="text-black text-lg">Оплата через авито-доставку (безопасная сделка, оплату получает магазин после
+            того, как вы забрали заказ)</li>
+          <li class="text-black text-lg">Оплата в пунктах выдачи заказов – наличными или картой </li>
+        </ul>
+      </div>
+      <div>
+        <div class="inline-flex text-black text-lg px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-9">
+          Пункты выдачи</div>
+          <div class="flex items-center gap-5" >
+            <img class="pickup-hover max-w-[173px] w-full" src="./img/1.png" alt="Pickup points">
+            <img class="pickup-hover max-w-[103px] w-full"  src="./img/2.png" alt="Pickup points">
+            <img class="pickup-hover max-w-[194px] w-full" src="./img/3.png" alt="Pickup points">
+          </div>
+          <div class="inline-flex text-black text-lg px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-9">
+            Самовывоз со склада в Люберцах по предварительному звонку</div>
+            <p class="text-black text-lg " >Ежедневно с 10 до 18 <br class="md:block hidden" >
+              День в день по договоренности с курьерской службой</p>
+
       </div>
     </div>
   </section>

@@ -21,4 +21,7 @@ body {
     transform: scale(0.95);
     box-shadow: none;
 }
-
+.pickup-hover:hover{
+    box-shadow: 0px 4px 4px 0px #00000040;
+    transition: .3s ease-in-out;
+}
