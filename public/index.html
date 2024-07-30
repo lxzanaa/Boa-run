@@ -12,6 +12,8 @@
 
 <body>
 
+
+
   <!-- Header start -->
   <header class="bg-[#FFCC00] pt-8 pb-7">
     <div class="max-w-[1210px] px-5 mx-auto flex items-center justify-between">
@@ -80,13 +82,127 @@
           </ul>
         </div>
         <div>
-          <button
+          <button id="open-modal-tel"
             class="text-white font-bold text-[8px] leading-[9.68px] bg-[#873003] py-2 px-7 rounded-full cursor-pointer">Обратный
             звонок</button>
         </div>
       </div>
     </div>
   </header>
+  <!-- Modal Overlay -->
+  <div id="modal-overlay" class="fixed inset-0 bg-black/50 opacity-0 transition-opacity duration-300 z-40 hidden">
+  </div>
+
+  <!-- Modal Content -->
+  <div id="modal-content"
+    class="fixed inset-0 flex items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
+    <div
+      class="bg-white border max-w-[1070px] w-full border-[#FFCC00] p-8 text-center transform transition-transform duration-300">
+      <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-8">Оставляйте телефон, и мы перезвоним
+        в рабочее время</h2>
+      <form class="flex flex-col gap-6 justify-center mx-auto" action="">
+        <input class="outline-none text-black font-medium text-xl text-center bg-transparent" type="text"
+          data-format="+* (***) ***-**-**" data-mask="+7 (___) ___-__-__" />
+        <button
+          class="mx-auto inline-flex max-w-[250px] justify-center text-black font-bold text-xl px-6 py-3 rounded-[20px] bg-[#FFCC00] hover:bg-[#e6b800]">Жду
+          звонка</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const modalContent = document.getElementById('modal-content');
+    const modalOverlay = document.getElementById('modal-overlay');
+    const openModalButton = document.getElementById('open-modal-tel');
+
+    function openModal() {
+      modalOverlay.classList.remove('hidden');
+      modalOverlay.classList.add('opacity-100');
+      modalContent.classList.remove('hidden', 'opacity-0', 'scale-90');
+      modalContent.classList.add('opacity-100', 'scale-100');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modalContent.classList.remove('opacity-100', 'scale-100');
+      modalContent.classList.add('opacity-0', 'scale-90');
+      modalOverlay.classList.remove('opacity-100');
+      modalOverlay.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    openModalButton.addEventListener('click', openModal);
+
+    modalOverlay.addEventListener('click', closeModal);
+
+    modalContent.addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
+
+
+  </script>
+  <script>
+    function doFormat(value, pattern, mask) {
+      const strippedValue = value.replace(/[^0-9]/g, "");
+
+      const chars = strippedValue.split('');
+
+
+      let count = 0;
+      let formatted = '';
+
+      for (let i = 0; i < pattern.length; i++) {
+        const char = pattern[i];
+        if (chars[count]) {
+          if (/\*/.test(char)) {
+            formatted += chars[count];
+            count++;
+          } else {
+            formatted += char;
+          }
+        }
+        else if (mask) {
+          const splittedMask = mask.split('');
+
+          if (splittedMask[i]) {
+            formatted += splittedMask[i];
+          }
+        }
+      }
+
+
+      return formatted;
+    }
+
+
+    document.querySelectorAll('[data-mask]').forEach(function (e) {
+
+
+      function format(elem) {
+        const val = doFormat(elem.value, elem.getAttribute('data-format'));
+        elem.value = doFormat(elem.value, elem.getAttribute('data-format'), elem.getAttribute('data-mask'));
+
+        if (elem.createTextRange) {
+          var range = elem.createTextRange();
+          range.move('character', val.length);
+          range.select();
+        } else if (elem.selectionStart) {
+          elem.focus();
+          elem.setSelectionRange(val.length, val.length);
+        }
+      }
+
+      e.addEventListener('keyup', function () {
+        format(e);
+      });
+
+      e.addEventListener('keydown', function () {
+        format(e);
+      });
+
+      format(e)
+    });
+  </script>
 
   <nav class="py-6">
     <div class="max-w-[1210px] px-5 mx-auto">
@@ -105,7 +221,7 @@
   </nav>
   <!-- Header end -->
 
-  <!-- Hero start --> 
+  <!-- Hero start -->
   <section class="pt-6 pb-[60px]">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h1 class="text-black font-bold text-5xl mb-11">Оригинальные ножевые блоки BAORUN стандарт А5</h1>
@@ -169,9 +285,9 @@
       </div>
     </div>
   </section>
-  <!-- Hero end --> 
+  <!-- Hero end -->
 
-   <!-- What machines are compatible with? start --> 
+  <!-- What machines are compatible with? start -->
   <section class="bg-[#FFCC00] py-[60px]">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-14">С какими машинками совместимы</h2>
@@ -216,9 +332,9 @@
       </div>
     </div>
   </section>
-   <!-- What machines are compatible with? end --> 
+  <!-- What machines are compatible with? end -->
 
- <!-- Important facts start --> 
+  <!-- Important facts start -->
   <section class="pt-[60px] pb-20">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Важные факты о наших ножевых блоках</h2>
@@ -258,9 +374,9 @@
       </div>
     </div>
   </section>
-   <!-- Important facts end --> 
+  <!-- Important facts end -->
 
-    <!-- Catalog start --> 
+  <!-- Catalog start -->
   <section class="py-[60px] bg-[#F4F4F4]">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Каталог товаров</h2>
@@ -439,9 +555,9 @@
         дополнительная скидка 5%</i>
     </div>
   </section>
-  <!-- Catalog end --> 
+  <!-- Catalog end -->
 
-  <!-- Metal knives BaoRun start --> 
+  <!-- Metal knives BaoRun start -->
   <section class="py-[60px]">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-10">Металлические ножи BaoRun – ваше лучшее
@@ -492,7 +608,7 @@
       </div>
     </div>
   </section>
-  <!-- Metal knives BaoRun start --> 
+  <!-- Metal knives BaoRun start -->
 
   <!-- Need further advice? start -->
   <section class="bg-[#FFCC00]">
@@ -824,7 +940,8 @@
             случае мы обменяем ваш товар или вернем деньги.
           </p>
         </div>
-        <div class="p-4 border-t-[2px] border-t-[#FFCC00] border-b-[#FFCC00] border-b-[2px] transition-all duration-300">
+        <div
+          class="p-4 border-t-[2px] border-t-[#FFCC00] border-b-[#FFCC00] border-b-[2px] transition-all duration-300">
           <button class="faq-button flex items-center justify-between w-full text-left">
             <h4 class="text-black font-semibold text-xl">
               Как часто нужно менять ножи?
@@ -917,7 +1034,7 @@
     </div>
   </section>
   <!-- Manager end -->
-   
+
   <!-- Footer start -->
   <footer class="py-9 bg-[#FED007]">
     <div class="max-w-[1210px] px-5 mx-auto flex justify-between">
@@ -929,7 +1046,7 @@
             class="uppercase w-2.5 h-2.5 rounded-full flex items-center justify-center border border-black">с</span>
           2018-2024г</p>
       </div>
-      <div class="flex gap-14" >
+      <div class="flex gap-14">
         <ul>
           <li><a class="flex items-center text-[#833000] font-semibold text-lg gap-4" href="tel: +7 (495) 517-87-73">
               <span>
@@ -939,7 +1056,7 @@
                     fill="currentColor" />
                 </svg>
               </span>
-               +7 (495) 517-87-73</a></li>
+              +7 (495) 517-87-73</a></li>
           <li><a class="flex items-center text-[#833000] font-semibold text-lg gap-2" href="tel: +7 (925) 517-87-73">
               <span>
                 <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -956,10 +1073,10 @@
                 </svg>
               </span>+7 (925) 517-87-73</a></li>
         </ul>
-        <div class="flex flex-col gap-2" >
-          <p class="text-[#833000] text-lg" >Пн-Пт, с 09.00 до 20.00</p>
-          <p class="text-[#833000] text-lg" >Сб-Вс, с 10.00 до 19.45</p>
-          <ul class="flex items-center gap-4" >
+        <div class="flex flex-col gap-2">
+          <p class="text-[#833000] text-lg">Пн-Пт, с 09.00 до 20.00</p>
+          <p class="text-[#833000] text-lg">Сб-Вс, с 10.00 до 19.45</p>
+          <ul class="flex items-center gap-4">
             <li>
               <a target="_blank" href="#">
                 <span>
