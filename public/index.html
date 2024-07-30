@@ -905,15 +905,20 @@
   <!-- What our valued clients say about us end -->
 
   <!-- Shipping and payment start -->
-  <section class="py-[60px]">
-    <div class="max-w-[1200px] px-2.5 mx-auto grid grid-cols-7 justify-between items-center gap-5">
+  <section class="md:py-[60px] py-5">
+    <div class="max-w-[1200px] px-2.5 mx-auto grid md:!grid-cols-7 justify-between items-center gap-5">
       <div class="col-span-3">
         <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-4">Доставка и оплата</h2>
-        <p class="text-black font-medium text-2xl ">Удобные виды доставки</p>
+        <p class="text-black font-medium text-2xl md:mb-0 mb-4">Удобные виды доставки</p>
         <div class="relative">
-          <img class="max-w-[387px] w-full h-[494px] object-cover mb-9" src="./img/delivery.png" alt="delivery">
-          <div class="absolute right-[65px] text-black text-lg px-2 py-1 rounded-[10px] bg-[#FFCC00] bottom-[92px]">
+          <div class="md:absolute md:hidden inline-flex right-[65px] text-black text-lg px-2 py-1 rounded-[10px] bg-[#FFCC00] bottom-[92px]">
             Курьерская доставка</div>
+          <img class="md:max-w-[387px] max-w-[143px] w-full md:h-[494px] h-[155px] object-cover md:mb-9 mb-4" src="./img/delivery.png" alt="delivery">
+          <div class="md:absolute md:!block hidden right-[65px] text-black text-lg px-2 py-1 rounded-[10px] bg-[#FFCC00] bottom-[92px] mb-2.5">
+            Курьерская доставка</div>
+
+          <div class="inline-flex md:hidden text-black text-lg px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-5">
+              Пункты выдачи</div>
         </div>
         <h3 class="text-black font-medium text-2xl mb-8">Любые способы оплаты</h3>
         <ul class="list-disc pl-5">
@@ -927,12 +932,12 @@
         </ul>
       </div>
       <div class="col-span-4">
-        <div class="inline-flex text-black text-lg px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-9">
+        <div class="md:!inline-flex hidden text-black text-lg px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-9">
           Пункты выдачи</div>
-        <div class="flex items-center gap-5">
-          <img class="pickup-hover max-w-[173px] w-full" src="./img/1.png" alt="Pickup points">
-          <img class="pickup-hover max-w-[103px] w-full" src="./img/2.png" alt="Pickup points">
-          <img class="pickup-hover max-w-[194px] w-full" src="./img/3.png" alt="Pickup points">
+        <div class="lg:flex grid grid-cols-10 items-center gap-5 mb-5">
+          <img style="box-shadow: 0px 4px 4px 0px #00000040;" class="col-span-3 pickup-hover max-w-[173px] w-full lg:mb-0 mb-2" src="./img/1.png" alt="Pickup points">
+          <img style="box-shadow: 0px 4px 4px 0px #00000040;" class="col-span-2 pickup-hover max-w-[103px] w-full lg:mb-0 mb-2" src="./img/2.png" alt="Pickup points">
+          <img style="box-shadow: 0px 4px 4px 0px #00000040;" class="col-span-4 pickup-hover max-w-[194px] w-full lg:mb-0 mb-2" src="./img/3.png" alt="Pickup points">
         </div>
         <div class="inline-flex text-black text-lg px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-9">
           Самовывоз со склада в Люберцах по предварительному звонку</div>
@@ -946,16 +951,16 @@
 
   <!-- FAQ start -->
   <section class="py-[60px]">
-    <div class="max-w-[1200px] px-2.5 mx-auto ">
-      <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-14">Часто задаваемые вопросы</h2>
+    <div class="max-w-[1200px]  mx-auto ">
+      <h2 class="text-[#873003] px-2.5 font-bold md:text-[45px] text-2xl md:leading-[54.86px] md:mb-14 mb-4">Часто задаваемые вопросы</h2>
       <div>
         <div class="p-4 border-t-[2px] border-t-[#FFCC00] transition-all duration-300">
           <button class="faq-button flex items-center justify-between w-full text-left">
-            <h4 class="text-black font-semibold text-xl">
+            <h4 class="text-black font-semibold md:text-xl text-base">
               Что делать, если ножи окажутся тупыми и не будут стричь?
             </h4>
             <span class="faq-icon-wrapper">
-              <svg class="faq-icon transition-all" width="45" height="45" viewBox="0 0 45 45" fill="none"
+              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45" viewBox="0 0 45 45" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_36)">
                   <path
@@ -970,18 +975,18 @@
               </svg>
             </span>
           </button>
-          <p class="faq-content pt-3 text-black font-light text-lg hidden transition-all duration-300">
+          <p class="faq-content pt-3 text-black font-light md:text-lg text-base hidden transition-all duration-300">
             Обратитесь в нашу тех поддержку. Возможно, ножи были повреждены при транспортировке или бракованы. В таком
             случае мы обменяем ваш товар или вернем деньги.
           </p>
         </div>
         <div class="p-4 border-t-[2px] border-t-[#FFCC00] transition-all duration-300">
           <button class="faq-button flex items-center justify-between w-full text-left">
-            <h4 class="text-black font-semibold text-xl">
+            <h4 class="text-black font-semibold md:text-xl text-base">
               Как вы подтверждаете качество металла?
             </h4>
             <span class="faq-icon-wrapper">
-              <svg class="faq-icon transition-all" width="45" height="45" viewBox="0 0 45 45" fill="none"
+              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45" viewBox="0 0 45 45" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_36)">
                   <path
@@ -996,18 +1001,18 @@
               </svg>
             </span>
           </button>
-          <p class="faq-content pt-3 text-black font-light text-lg hidden transition-all duration-300">
+          <p class="faq-content pt-3 text-black font-light md:text-lg text-base hidden transition-all duration-300">
             Обратитесь в нашу тех поддержку. Возможно, ножи были повреждены при транспортировке или бракованы. В таком
             случае мы обменяем ваш товар или вернем деньги.
           </p>
         </div>
         <div class="p-4 border-t-[2px] border-t-[#FFCC00] transition-all duration-300">
           <button class="faq-button flex items-center justify-between w-full text-left">
-            <h4 class="text-black font-semibold text-xl">
+            <h4 class="text-black font-semibold md:text-xl text-base">
               Что делать, если ножи не подойдут к моей машинке?
             </h4>
             <span class="faq-icon-wrapper">
-              <svg class="faq-icon transition-all" width="45" height="45" viewBox="0 0 45 45" fill="none"
+              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45" viewBox="0 0 45 45" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_36)">
                   <path
@@ -1022,18 +1027,18 @@
               </svg>
             </span>
           </button>
-          <p class="faq-content pt-3 text-black font-light text-lg hidden transition-all duration-300">
+          <p class="faq-content pt-3 text-black font-light md:text-lg text-base hidden transition-all duration-300">
             Обратитесь в нашу тех поддержку. Возможно, ножи были повреждены при транспортировке или бракованы. В таком
             случае мы обменяем ваш товар или вернем деньги.
           </p>
         </div>
         <div class="p-4 border-t-[2px] border-t-[#FFCC00] transition-all duration-300">
           <button class="faq-button flex items-center justify-between w-full text-left">
-            <h4 class="text-black font-semibold text-xl">
+            <h4 class="text-black font-semibold md:text-xl text-base">
               Можно ли заточить старые ножи?
             </h4>
             <span class="faq-icon-wrapper">
-              <svg class="faq-icon transition-all" width="45" height="45" viewBox="0 0 45 45" fill="none"
+              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45" viewBox="0 0 45 45" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_36)">
                   <path
@@ -1048,19 +1053,18 @@
               </svg>
             </span>
           </button>
-          <p class="faq-content pt-3 text-black font-light text-lg hidden transition-all duration-300">
+          <p class="faq-content pt-3 text-black font-light md:text-lg text-base hidden transition-all duration-300">
             Обратитесь в нашу тех поддержку. Возможно, ножи были повреждены при транспортировке или бракованы. В таком
             случае мы обменяем ваш товар или вернем деньги.
           </p>
         </div>
-        <div
-          class="p-4 border-t-[2px] border-t-[#FFCC00] border-b-[#FFCC00] border-b-[2px] transition-all duration-300">
+        <div class="p-4 border-t-[2px] border-t-[#FFCC00] border-b-[#FFCC00] border-b-[2px] transition-all duration-300">
           <button class="faq-button flex items-center justify-between w-full text-left">
-            <h4 class="text-black font-semibold text-xl">
+            <h4 class="text-black font-semibold md:text-xl text-base">
               Как часто нужно менять ножи?
             </h4>
             <span class="faq-icon-wrapper">
-              <svg class="faq-icon transition-all" width="45" height="45" viewBox="0 0 45 45" fill="none"
+              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45" viewBox="0 0 45 45" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_36)">
                   <path
@@ -1075,7 +1079,7 @@
               </svg>
             </span>
           </button>
-          <p class="faq-content pt-3 text-black font-light text-lg hidden transition-all duration-300">
+          <p class="faq-content pt-3 text-black font-light md:text-lg text-base hidden transition-all duration-300">
             Обратитесь в нашу тех поддержку. Возможно, ножи были повреждены при транспортировке или бракованы. В таком
             случае мы обменяем ваш товар или вернем деньги.
           </p>
@@ -1124,7 +1128,6 @@
           transform: rotate(45deg);
         }
       </style>
-
     </div>
   </section>
   <!-- FAQ end -->
