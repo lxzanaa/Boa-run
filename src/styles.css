@@ -27,7 +27,7 @@ body {
 }
 @media (max-width: 975px) {
     .header__logo{
-        max-width: 150px !important;
+        max-width: 100px !important;
     }
 }
 button{

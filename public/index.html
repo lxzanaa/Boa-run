@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -17,7 +18,8 @@
   <header class="bg-[#FFCC00] pt-8 pb-7">
     <div class="max-w-[1200px] px-2.5 mx-auto flex items-center justify-between">
       <a href="index.html">
-        <img class="header__logo max-w-[100px] w-full lg:max-w-[303px] md:max-w-[250px]" src="./img/header/logo.svg" alt="logo">
+        <img class="header__logo max-w-[100px] w-full lg:max-w-[303px] md:max-w-[250px]" src="./img/header/logo.svg"
+          alt="logo">
       </a>
       <div class="flex items-center gap-6">
         <div class="md:!flex hidden items-center gap-9">
@@ -93,7 +95,7 @@
                 </span>
                 +7 (495) 517-87-73
               </li>
-              <li class="text-[#873003] font-bold lg:text-xl text-base">
+              <li class="text-[#873003] font-bold lg:text-xl text-base pl-6">
                 ПН-ВС 9:00 - 20:00
               </li>
             </ul>
@@ -114,10 +116,11 @@
   </div>
   <!-- Modal Content -->
   <div id="modal-content"
-    class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[1070px] w-full flex items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
+    class="fixed top-1/2 left-1/2 px-3 -translate-x-1/2 -translate-y-1/2 max-w-[1070px] w-full flex items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
     <div
       class="bg-white border max-w-[1070px] w-full border-[#FFCC00] p-8 text-center transform transition-transform duration-300">
-      <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-8">Оставляйте телефон, и мы перезвоним
+      <h2 class="text-[#873003] font-bold lg:text-[45px] md:text-2xl text-xl lg:leading-[54.86px] mb-8">Оставляйте
+        телефон, и мы перезвоним
         в рабочее время</h2>
       <form class="flex flex-col gap-6 justify-center mx-auto" action="">
         <input class="outline-none text-black font-medium text-xl text-center bg-transparent" type="text"
@@ -127,6 +130,7 @@
           звонка</button>
       </form>
     </div>
+
   </div>
   <script>
     // Get the modal elements
@@ -371,7 +375,6 @@
       </div>
     </div>
   </section>
-
   <!-- What machines are compatible with? end -->
 
   <!-- Important facts start -->
@@ -606,6 +609,118 @@
           </div>
         </div>
       </div>
+      <div class="swiper mySwiper mb-5 md:!hidden block relative">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="max-w-[330px] mx-auto w-full ">
+              <div class="relative max-w-[330px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
+                style="box-shadow: 0px 4px 4px 0px #00000040;">
+                <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
+                  src="./img/catalog/1.png" alt="product">
+                <div
+                  class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
+                  -30%</div>
+              </div>
+              <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
+              <p class="text-black text-sm mb-4">Арт: 18511</p>
+              <div class="flex items-center gap-2 justify-between mb-5">
+                <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
+                <p class="text-black font-medium text-xl">5 000 руб.</p>
+              </div>
+              <div>
+                <button
+                  class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
+                  заказ</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="max-w-[330px] mx-auto w-full ">
+              <div class="relative max-w-[330px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
+                style="box-shadow: 0px 4px 4px 0px #00000040;">
+                <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
+                  src="./img/catalog/1.png" alt="product">
+                <div
+                  class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
+                  -30%</div>
+              </div>
+              <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
+              <p class="text-black text-sm mb-4">Арт: 18511</p>
+              <div class="flex items-center gap-2 justify-between mb-5">
+                <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
+                <p class="text-black font-medium text-xl">5 000 руб.</p>
+              </div>
+              <div>
+                <button
+                  class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
+                  заказ</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="max-w-[330px] mx-auto w-full ">
+              <div class="relative max-w-[330px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
+                style="box-shadow: 0px 4px 4px 0px #00000040;">
+                <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
+                  src="./img/catalog/1.png" alt="product">
+                <div
+                  class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
+                  -30%</div>
+              </div>
+              <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
+              <p class="text-black text-sm mb-4">Арт: 18511</p>
+              <div class="flex items-center gap-2 justify-between mb-5">
+                <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
+                <p class="text-black font-medium text-xl">5 000 руб.</p>
+              </div>
+              <div>
+                <button
+                  class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
+                  заказ</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="max-w-[330px] mx-auto w-full ">
+              <div class="relative max-w-[330px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
+                style="box-shadow: 0px 4px 4px 0px #00000040;">
+                <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
+                  src="./img/catalog/1.png" alt="product">
+                <div
+                  class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
+                  -30%</div>
+              </div>
+              <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
+              <p class="text-black text-sm mb-4">Арт: 18511</p>
+              <div class="flex items-center gap-2 justify-between mb-5">
+                <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
+                <p class="text-black font-medium text-xl">5 000 руб.</p>
+              </div>
+              <div>
+                <button
+                  class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
+                  заказ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next absolute"></div>
+        <div class="swiper-button-prev absolute"></div>
+        <style>
+          .swiper-button-next,
+          .swiper-button-prev {
+            width: 9.51px;
+            height: 17.29px;
+            color: #873003;
+
+          }
+
+          .swiper-button-next::after,
+          .swiper-button-prev::after {
+            font-size: 17.29px;
+          }
+        </style>
+      </div>
       <i
         class="text-black font-medium md:text-2xl text-lg md:w-full md:max-w-full max-w-[377px] mx-auto text-center flex justify-center">При
         заказе 3-х и более ножей –
@@ -712,10 +827,12 @@
   <section class="bg-[#FFCC00]">
     <div class="max-w-[1200px] px-2.5 mx-auto lg:flex relative">
       <div class="lg:py-[120px] py-5 max-w-[765px] text-left mx-auto">
-        <h2 class="text-[#873003] font-bold md:text-[45px] text-2xl md:leading-[54.86px] md:mb-8 mb-4 text-center md:text-left">
+        <h2
+          class="text-[#873003] font-bold md:text-[45px] text-2xl md:leading-[54.86px] md:mb-8 mb-4 text-center md:text-left">
           Требуется дополнительная консультация?
         </h2>
-        <p class="text-[#873003] md:text-2xl text-xl md:mb-[50px] mb-10 text-center md:text-left"><b>Оставьте заявку,</b> и мы
+        <p class="text-[#873003] md:text-2xl text-xl md:mb-[50px] mb-10 text-center md:text-left"><b>Оставьте
+            заявку,</b> и мы
           перезвоним вам в течение 15 минут.</p>
         <form class="lg:max-w-[444px] w-full mb-2.5">
           <div class="grid max-w-[236px] md:max-w-full mx-auto md:grid-cols-2 md:gap-2.5 gap-10 mb-10">
@@ -798,7 +915,8 @@
   <!-- What our valued clients say about us start -->
   <section class="py-[60px] bg-[#F4F4F4]">
     <div class="max-w-[1200px] mx-auto">
-      <h2 class="text-[#873003] px-2.5 font-bold md:text-[45px] text-2xl md:leading-[54.86px] md:mb-6 mb-4">Что о нас говорят
+      <h2 class="text-[#873003] px-2.5 font-bold md:text-[45px] text-2xl md:leading-[54.86px] md:mb-6 mb-4">Что о нас
+        говорят
         наши уважаемые клиенты
       </h2>
       <div class="md:flex px-2.5 md:items-center md:gap-[100px] md:mb-9 mb-5 text-center">
@@ -806,10 +924,11 @@
         <a class="button-shadow text-[#F4F4F4] font-medium text-xs px-8 py-2 bg-[#873003] rounded-[10px]"
           href="#">Оставить отзыв</a>
       </div>
-      <div class="grid lg:grid-cols-7 md:justify-between justify-center max-w-[598px] mx-auto">
+      <div class="grid lg:grid-cols-7 md:justify-between justify-center max-w-[598px] lg:max-w-full mx-auto lg:mx-0">
         <div class="lg:col-span-4 md:mb-0 mb-5">
           <div>
-            <div class="relative lg:max-w-[598px] mx-auto flex justify-center w-full h-[324px] bg-[#FFCC00] rounded-[10px] mb-6">
+            <div
+              class="relative lg:max-w-[598px] lg:mx-0 mx-auto flex justify-center w-full h-[324px] bg-[#FFCC00] rounded-[10px] mb-6">
               <video id="video" class="w-full h-full object-cover rounded-[10px]" src="./video/example.mp4"></video>
               <button id="playPauseButton"
                 class="w-[100px] h-[100px] rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white flex items-center justify-center">
@@ -911,32 +1030,39 @@
         <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-4">Доставка и оплата</h2>
         <p class="text-black font-medium text-2xl md:mb-0 mb-4">Удобные виды доставки</p>
         <div class="relative">
-          <div class="md:absolute md:hidden inline-flex right-[65px] text-black text-lg px-2 py-1 rounded-[10px] bg-[#FFCC00] bottom-[92px]">
+          <div
+            class="md:absolute md:hidden inline-flex right-[65px] text-black text-lg px-2 py-1 rounded-[10px] bg-[#FFCC00] bottom-[92px]">
             Курьерская доставка</div>
-          <img class="md:max-w-[387px] max-w-[143px] w-full md:h-[494px] h-[155px] object-cover md:mb-9 mb-4" src="./img/delivery.png" alt="delivery">
-          <div class="md:absolute md:!block hidden right-[65px] text-black text-lg px-2 py-1 rounded-[10px] bg-[#FFCC00] bottom-[92px] mb-2.5">
+          <img class="md:max-w-[387px] max-w-[143px] w-full md:h-[494px] h-[155px] object-cover md:mb-9 mb-4"
+            src="./img/delivery.png" alt="delivery">
+          <div
+            class="md:absolute md:!block hidden right-[65px] text-black text-lg px-2 py-1 rounded-[10px] bg-[#FFCC00] bottom-[92px] mb-2.5">
             Курьерская доставка</div>
 
           <div class="inline-flex md:hidden text-black text-lg px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-5">
-              Пункты выдачи</div>
+            Пункты выдачи</div>
 
-              <div class="col-span-4 md:!hidden block">
-                <div class="md:!inline-flex hidden text-black text-lg px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-9">
-                  Пункты выдачи</div>
-                <div class="lg:flex grid grid-cols-10 items-center gap-5 md:mb-5">
-                  <img style="box-shadow: 0px 4px 4px 0px #00000040;" class="col-span-3 pickup-hover max-w-[173px] w-full lg:mb-0 mb-2" src="./img/1.png" alt="Pickup points">
-                  <img style="box-shadow: 0px 4px 4px 0px #00000040;" class="col-span-2 pickup-hover max-w-[103px] w-full lg:mb-0 mb-2" src="./img/2.png" alt="Pickup points">
-                  <img style="box-shadow: 0px 4px 4px 0px #00000040;" class="col-span-4 pickup-hover max-w-[194px] w-full lg:mb-0 mb-2" src="./img/3.png" alt="Pickup points">
-                </div>
-              
-                <div class="inline-flex text-black md:text-lg text-base md:max-w-full max-w-[307px] px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-2.5">
-                  Самовывоз со склада в Люберцах по предварительному звонку</div>
-                  <p class="text-black md:text-lg text-base md:hidden block mb-4">Ежедневно с 10 до 18 <br>
-                    День в день по договоренности с курьерской службой</p>
-                <p class="text-black text-lg md:!block hidden">Ежедневно с 10 до 18 <br>
-                  День в день по договоренности с курьерской службой</p>
-        
-              </div>
+          <div class="col-span-4 md:!hidden block">
+            <div class="md:!inline-flex hidden text-black text-lg px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-9">
+              Пункты выдачи</div>
+            <div class="lg:flex grid grid-cols-10 items-center gap-5 md:mb-5">
+              <img style="box-shadow: 0px 4px 4px 0px #00000040;"
+                class="col-span-3 pickup-hover max-w-[173px] w-full lg:mb-0 mb-2" src="./img/1.png" alt="Pickup points">
+              <img style="box-shadow: 0px 4px 4px 0px #00000040;"
+                class="col-span-2 pickup-hover max-w-[103px] w-full lg:mb-0 mb-2" src="./img/2.png" alt="Pickup points">
+              <img style="box-shadow: 0px 4px 4px 0px #00000040;"
+                class="col-span-4 pickup-hover max-w-[194px] w-full lg:mb-0 mb-2" src="./img/3.png" alt="Pickup points">
+            </div>
+
+            <div
+              class="inline-flex text-black md:text-lg text-base md:max-w-full max-w-[307px] px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-2.5">
+              Самовывоз со склада в Люберцах по предварительному звонку</div>
+            <p class="text-black md:text-lg text-base md:hidden block mb-4">Ежедневно с 10 до 18 <br>
+              День в день по договоренности с курьерской службой</p>
+            <p class="text-black text-lg md:!block hidden">Ежедневно с 10 до 18 <br>
+              День в день по договоренности с курьерской службой</p>
+
+          </div>
         </div>
         <h3 class="text-black font-medium md:text-2xl text-xl md:mb-8 mb-4">Любые способы оплаты</h3>
         <ul class="list-disc pl-5">
@@ -944,7 +1070,8 @@
           <li class="text-black md:text-lg text-base">Переводом Сбербанк при получении</li>
           <li class="text-black md:text-lg text-base">Картой на сайте (без учета стоимости доставки)</li>
           <li class="text-black md:text-lg text-base">Безналичный расчет (банковские реквизиты)</li>
-          <li class="text-black md:text-lg text-base">Оплата через авито-доставку (безопасная сделка, оплату получает магазин после
+          <li class="text-black md:text-lg text-base">Оплата через авито-доставку (безопасная сделка, оплату получает
+            магазин после
             того, как вы забрали заказ)</li>
           <li class="text-black md:text-lg text-base">Оплата в пунктах выдачи заказов – наличными или картой </li>
         </ul>
@@ -953,9 +1080,12 @@
         <div class="md:!inline-flex hidden text-black text-lg px-4 py-1 rounded-[10px] bg-[#FFCC00] mb-9">
           Пункты выдачи</div>
         <div class="lg:flex grid grid-cols-10 items-center gap-5 md:mb-5 mb-4">
-          <img style="box-shadow: 0px 4px 4px 0px #00000040;" class="col-span-3 pickup-hover max-w-[173px] w-full lg:mb-0 mb-2" src="./img/1.png" alt="Pickup points">
-          <img style="box-shadow: 0px 4px 4px 0px #00000040;" class="col-span-2 pickup-hover max-w-[103px] w-full lg:mb-0 mb-2" src="./img/2.png" alt="Pickup points">
-          <img style="box-shadow: 0px 4px 4px 0px #00000040;" class="col-span-4 pickup-hover max-w-[194px] w-full lg:mb-0 mb-2" src="./img/3.png" alt="Pickup points">
+          <img style="box-shadow: 0px 4px 4px 0px #00000040;"
+            class="col-span-3 pickup-hover max-w-[173px] w-full lg:mb-0 mb-2" src="./img/1.png" alt="Pickup points">
+          <img style="box-shadow: 0px 4px 4px 0px #00000040;"
+            class="col-span-2 pickup-hover max-w-[103px] w-full lg:mb-0 mb-2" src="./img/2.png" alt="Pickup points">
+          <img style="box-shadow: 0px 4px 4px 0px #00000040;"
+            class="col-span-4 pickup-hover max-w-[194px] w-full lg:mb-0 mb-2" src="./img/3.png" alt="Pickup points">
         </div>
         <p class="text-black md:text-lg text-base md:hidden block">Ежедневно с 10 до 18 <br>
           День в день по договоренности с курьерской службой</p>
@@ -972,7 +1102,8 @@
   <!-- FAQ start -->
   <section class="md:py-[60px] py-5">
     <div class="max-w-[1200px]  mx-auto ">
-      <h2 class="text-[#873003] px-2.5 font-bold md:text-[45px] text-2xl md:leading-[54.86px] md:mb-14 mb-4">Часто задаваемые вопросы</h2>
+      <h2 class="text-[#873003] px-2.5 font-bold md:text-[45px] text-2xl md:leading-[54.86px] md:mb-14 mb-4">Часто
+        задаваемые вопросы</h2>
       <div>
         <div class="p-4 border-t-[2px] border-t-[#FFCC00] transition-all duration-300">
           <button class="faq-button flex items-center justify-between w-full text-left">
@@ -980,8 +1111,8 @@
               Что делать, если ножи окажутся тупыми и не будут стричь?
             </h4>
             <span class="faq-icon-wrapper">
-              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45" viewBox="0 0 45 45" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45"
+                viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_36)">
                   <path
                     d="M45 22.5C45 28.4674 42.6295 34.1903 38.4099 38.4099C34.1903 42.6295 28.4674 45 22.5 45C16.5326 45 10.8097 42.6295 6.5901 38.4099C2.37053 34.1903 0 28.4674 0 22.5C0 16.5326 2.37053 10.8097 6.5901 6.5901C10.8097 2.37053 16.5326 0 22.5 0C28.4674 0 34.1903 2.37053 38.4099 6.5901C42.6295 10.8097 45 16.5326 45 22.5ZM23.9062 12.6562C23.9062 12.2833 23.7581 11.9256 23.4944 11.6619C23.2306 11.3982 22.873 11.25 22.5 11.25C22.127 11.25 21.7694 11.3982 21.5056 11.6619C21.2419 11.9256 21.0938 12.2833 21.0938 12.6562V21.0938H12.6562C12.2833 21.0938 11.9256 21.2419 11.6619 21.5056C11.3982 21.7694 11.25 22.127 11.25 22.5C11.25 22.873 11.3982 23.2306 11.6619 23.4944C11.9256 23.7581 12.2833 23.9062 12.6562 23.9062H21.0938V32.3438C21.0938 32.7167 21.2419 33.0744 21.5056 33.3381C21.7694 33.6018 22.127 33.75 22.5 33.75C22.873 33.75 23.2306 33.6018 23.4944 33.3381C23.7581 33.0744 23.9062 32.7167 23.9062 32.3438V23.9062H32.3438C32.7167 23.9062 33.0744 23.7581 33.3381 23.4944C33.6018 23.2306 33.75 22.873 33.75 22.5C33.75 22.127 33.6018 21.7694 33.3381 21.5056C33.0744 21.2419 32.7167 21.0938 32.3438 21.0938H23.9062V12.6562Z"
@@ -1006,8 +1137,8 @@
               Как вы подтверждаете качество металла?
             </h4>
             <span class="faq-icon-wrapper">
-              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45" viewBox="0 0 45 45" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45"
+                viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_36)">
                   <path
                     d="M45 22.5C45 28.4674 42.6295 34.1903 38.4099 38.4099C34.1903 42.6295 28.4674 45 22.5 45C16.5326 45 10.8097 42.6295 6.5901 38.4099C2.37053 34.1903 0 28.4674 0 22.5C0 16.5326 2.37053 10.8097 6.5901 6.5901C10.8097 2.37053 16.5326 0 22.5 0C28.4674 0 34.1903 2.37053 38.4099 6.5901C42.6295 10.8097 45 16.5326 45 22.5ZM23.9062 12.6562C23.9062 12.2833 23.7581 11.9256 23.4944 11.6619C23.2306 11.3982 22.873 11.25 22.5 11.25C22.127 11.25 21.7694 11.3982 21.5056 11.6619C21.2419 11.9256 21.0938 12.2833 21.0938 12.6562V21.0938H12.6562C12.2833 21.0938 11.9256 21.2419 11.6619 21.5056C11.3982 21.7694 11.25 22.127 11.25 22.5C11.25 22.873 11.3982 23.2306 11.6619 23.4944C11.9256 23.7581 12.2833 23.9062 12.6562 23.9062H21.0938V32.3438C21.0938 32.7167 21.2419 33.0744 21.5056 33.3381C21.7694 33.6018 22.127 33.75 22.5 33.75C22.873 33.75 23.2306 33.6018 23.4944 33.3381C23.7581 33.0744 23.9062 32.7167 23.9062 32.3438V23.9062H32.3438C32.7167 23.9062 33.0744 23.7581 33.3381 23.4944C33.6018 23.2306 33.75 22.873 33.75 22.5C33.75 22.127 33.6018 21.7694 33.3381 21.5056C33.0744 21.2419 32.7167 21.0938 32.3438 21.0938H23.9062V12.6562Z"
@@ -1032,8 +1163,8 @@
               Что делать, если ножи не подойдут к моей машинке?
             </h4>
             <span class="faq-icon-wrapper">
-              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45" viewBox="0 0 45 45" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45"
+                viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_36)">
                   <path
                     d="M45 22.5C45 28.4674 42.6295 34.1903 38.4099 38.4099C34.1903 42.6295 28.4674 45 22.5 45C16.5326 45 10.8097 42.6295 6.5901 38.4099C2.37053 34.1903 0 28.4674 0 22.5C0 16.5326 2.37053 10.8097 6.5901 6.5901C10.8097 2.37053 16.5326 0 22.5 0C28.4674 0 34.1903 2.37053 38.4099 6.5901C42.6295 10.8097 45 16.5326 45 22.5ZM23.9062 12.6562C23.9062 12.2833 23.7581 11.9256 23.4944 11.6619C23.2306 11.3982 22.873 11.25 22.5 11.25C22.127 11.25 21.7694 11.3982 21.5056 11.6619C21.2419 11.9256 21.0938 12.2833 21.0938 12.6562V21.0938H12.6562C12.2833 21.0938 11.9256 21.2419 11.6619 21.5056C11.3982 21.7694 11.25 22.127 11.25 22.5C11.25 22.873 11.3982 23.2306 11.6619 23.4944C11.9256 23.7581 12.2833 23.9062 12.6562 23.9062H21.0938V32.3438C21.0938 32.7167 21.2419 33.0744 21.5056 33.3381C21.7694 33.6018 22.127 33.75 22.5 33.75C22.873 33.75 23.2306 33.6018 23.4944 33.3381C23.7581 33.0744 23.9062 32.7167 23.9062 32.3438V23.9062H32.3438C32.7167 23.9062 33.0744 23.7581 33.3381 23.4944C33.6018 23.2306 33.75 22.873 33.75 22.5C33.75 22.127 33.6018 21.7694 33.3381 21.5056C33.0744 21.2419 32.7167 21.0938 32.3438 21.0938H23.9062V12.6562Z"
@@ -1058,8 +1189,8 @@
               Можно ли заточить старые ножи?
             </h4>
             <span class="faq-icon-wrapper">
-              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45" viewBox="0 0 45 45" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45"
+                viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_36)">
                   <path
                     d="M45 22.5C45 28.4674 42.6295 34.1903 38.4099 38.4099C34.1903 42.6295 28.4674 45 22.5 45C16.5326 45 10.8097 42.6295 6.5901 38.4099C2.37053 34.1903 0 28.4674 0 22.5C0 16.5326 2.37053 10.8097 6.5901 6.5901C10.8097 2.37053 16.5326 0 22.5 0C28.4674 0 34.1903 2.37053 38.4099 6.5901C42.6295 10.8097 45 16.5326 45 22.5ZM23.9062 12.6562C23.9062 12.2833 23.7581 11.9256 23.4944 11.6619C23.2306 11.3982 22.873 11.25 22.5 11.25C22.127 11.25 21.7694 11.3982 21.5056 11.6619C21.2419 11.9256 21.0938 12.2833 21.0938 12.6562V21.0938H12.6562C12.2833 21.0938 11.9256 21.2419 11.6619 21.5056C11.3982 21.7694 11.25 22.127 11.25 22.5C11.25 22.873 11.3982 23.2306 11.6619 23.4944C11.9256 23.7581 12.2833 23.9062 12.6562 23.9062H21.0938V32.3438C21.0938 32.7167 21.2419 33.0744 21.5056 33.3381C21.7694 33.6018 22.127 33.75 22.5 33.75C22.873 33.75 23.2306 33.6018 23.4944 33.3381C23.7581 33.0744 23.9062 32.7167 23.9062 32.3438V23.9062H32.3438C32.7167 23.9062 33.0744 23.7581 33.3381 23.4944C33.6018 23.2306 33.75 22.873 33.75 22.5C33.75 22.127 33.6018 21.7694 33.3381 21.5056C33.0744 21.2419 32.7167 21.0938 32.3438 21.0938H23.9062V12.6562Z"
@@ -1078,14 +1209,15 @@
             случае мы обменяем ваш товар или вернем деньги.
           </p>
         </div>
-        <div class="p-4 border-t-[2px] border-t-[#FFCC00] border-b-[#FFCC00] border-b-[2px] transition-all duration-300">
+        <div
+          class="p-4 border-t-[2px] border-t-[#FFCC00] border-b-[#FFCC00] border-b-[2px] transition-all duration-300">
           <button class="faq-button flex items-center justify-between w-full text-left">
             <h4 class="text-black font-semibold md:text-xl text-base">
               Как часто нужно менять ножи?
             </h4>
             <span class="faq-icon-wrapper">
-              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45" viewBox="0 0 45 45" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg class="faq-icon transition-all md:w-[45px] w-[30px] md:h-[45px] h-[30px]" width="45" height="45"
+                viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_36)">
                   <path
                     d="M45 22.5C45 28.4674 42.6295 34.1903 38.4099 38.4099C34.1903 42.6295 28.4674 45 22.5 45C16.5326 45 10.8097 42.6295 6.5901 38.4099C2.37053 34.1903 0 28.4674 0 22.5C0 16.5326 2.37053 10.8097 6.5901 6.5901C10.8097 2.37053 16.5326 0 22.5 0C28.4674 0 34.1903 2.37053 38.4099 6.5901C42.6295 10.8097 45 16.5326 45 22.5ZM23.9062 12.6562C23.9062 12.2833 23.7581 11.9256 23.4944 11.6619C23.2306 11.3982 22.873 11.25 22.5 11.25C22.127 11.25 21.7694 11.3982 21.5056 11.6619C21.2419 11.9256 21.0938 12.2833 21.0938 12.6562V21.0938H12.6562C12.2833 21.0938 11.9256 21.2419 11.6619 21.5056C11.3982 21.7694 11.25 22.127 11.25 22.5C11.25 22.873 11.3982 23.2306 11.6619 23.4944C11.9256 23.7581 12.2833 23.9062 12.6562 23.9062H21.0938V32.3438C21.0938 32.7167 21.2419 33.0744 21.5056 33.3381C21.7694 33.6018 22.127 33.75 22.5 33.75C22.873 33.75 23.2306 33.6018 23.4944 33.3381C23.7581 33.0744 23.9062 32.7167 23.9062 32.3438V23.9062H32.3438C32.7167 23.9062 33.0744 23.7581 33.3381 23.4944C33.6018 23.2306 33.75 22.873 33.75 22.5C33.75 22.127 33.6018 21.7694 33.3381 21.5056C33.0744 21.2419 32.7167 21.0938 32.3438 21.0938H23.9062V12.6562Z"
@@ -1154,18 +1286,24 @@
 
   <!-- Manager start -->
   <section class="lg:pt-[173px] md:pt-10 py-5 md:pb-[60px]">
-    <div class="max-w-[1200px] px-2.5 lg:text-left text-center mx-auto bg-[#FFCC00] rounded-[50px] relative lg:py-[60px] lg:pl-[98px] lg:flex pt-2.5">
-      <div class="max-w-[612px] mx-auto lg:mb-0 mb-5">
-        <h2 class="text-[#873003] font-bold md:text-[45px] text-[26px] mb-5 text-center lg:text-left">Остались вопросы? <span class="md:text-[35px] text-[22px] block">Задайте
-            их нашему менеджеру.</span></h2>
-        <p class="text-[#873003] md:text-lg text-base lg:text-left text-center mx-auto mb-11 max-w-[448px]">Он расскажет вам обо всех характеристиках ножей и уточнит
+    <div
+      class="max-w-[1200px] px-2.5 lg:text-left text-center mx-auto bg-[#FFCC00] rounded-[50px] relative lg:py-[60px] lg:pl-[98px] lg:flex pt-2.5">
+      <div class="max-w-[612px] mx-auto lg:mx-0  lg:mb-0 mb-5">
+        <h2 class="text-[#873003] font-bold md:text-[45px] text-[26px] mb-5 text-center lg:text-left">Остались вопросы?
+          <span class="md:text-[35px] text-[22px] block">Задайте
+            их нашему менеджеру.</span>
+        </h2>
+        <p class="text-[#873003] md:text-lg text-base lg:text-left text-center mx-auto mb-11 max-w-[448px] lg:mx-0">Он
+          расскажет
+          вам обо всех характеристиках ножей и уточнит
           подходят ли они к вашей модели машинки.</p>
         <button
-          class="button-shadow py-6 text-white font-semibold text-lg rounded-[20px] bg-[#873003] inline-flex px-[100px]">Получить
+          class="button-shadow md:py-6 py-5 text-white font-semibold md:text-lg text-base rounded-[20px] bg-[#873003] inline-flex md:px-[100px] px-11">Получить
           консультацию</button>
       </div>
       <div>
-        <img class="lg:absolute lg:max-w-[455px] md:max-w-[300px] max-w-[180px] mx-auto w-full bottom-0 right-3" src="./img/manager.png" alt="manager">
+        <img class="lg:absolute lg:max-w-[455px] md:max-w-[300px] max-w-[180px] mx-auto w-full bottom-0 right-3"
+          src="./img/manager.png" alt="manager">
       </div>
     </div>
   </section>
@@ -1174,7 +1312,7 @@
   <!-- Footer start -->
   <footer class="md:py-9 py-5 bg-[#FED007]">
     <div class="max-w-[1200px] px-2.5 mx-auto lg:flex lg:justify-between text-center">
-      <div class="lg:!block hidden" >
+      <div class="lg:!block hidden">
         <a href="#">
           <img class="max-w-[303px] w-full mb-7" src="./img/footer/logo.svg" alt="">
         </a>
@@ -1182,11 +1320,19 @@
             class="uppercase w-2.5 h-2.5 rounded-full flex items-center justify-center border border-black">с</span>
           2018-2024г</p>
       </div>
-      <div class="lg:flex justify-center gap-14">
-        <ul class="max-w-[189px] mx-auto justify-center lg:mb-0 mb-5 flex flex-col items-start" >
-          <li><a class="flex items-center text-[#833000] font-semibold md:text-lg text-base " href="tel: +7 (495) 517-87-73">
+      <div class="lg:flex items-start justify-center gap-14">
+        <ul class="max-w-[190px]  lg:max-w-full mx-auto justify-center lg:mb-0 mb-5 flex flex-col items-start">
+          <li><a class="flex  items-center lg:gap-4 text-[#833000] font-semibold md:text-lg text-base "
+              href="tel: +7 (495) 517-87-73">
               <span>
-                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="lg:!block hidden" width="11" height="16" viewBox="0 0 11 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 2C0 1.46957 0.231785 0.960859 0.644365 0.585786C1.05694 0.210714 1.61652 0 2.2 0L8.8 0C9.38348 0 9.94306 0.210714 10.3556 0.585786C10.7682 0.960859 11 1.46957 11 2V14C11 14.5304 10.7682 15.0391 10.3556 15.4142C9.94306 15.7893 9.38348 16 8.8 16H2.2C1.61652 16 1.05694 15.7893 0.644365 15.4142C0.231785 15.0391 0 14.5304 0 14V2ZM6.6 13C6.6 12.7348 6.48411 12.4804 6.27782 12.2929C6.07153 12.1054 5.79174 12 5.5 12C5.20826 12 4.92847 12.1054 4.72218 12.2929C4.51589 12.4804 4.4 12.7348 4.4 13C4.4 13.2652 4.51589 13.5196 4.72218 13.7071C4.92847 13.8946 5.20826 14 5.5 14C5.79174 14 6.07153 13.8946 6.27782 13.7071C6.48411 13.5196 6.6 13.2652 6.6 13Z"
+                    fill="currentColor" />
+                </svg>
+                <svg class="lg:hidden block" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_1_13)">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M6.23444 1.00929C6.44159 0.905248 6.66849 0.846416 6.90009 0.836695C7.1317 0.826974 7.36273 0.866585 7.57787 0.952905C7.79301 1.03922 7.98735 1.17028 8.14801 1.33739C8.30867 1.5045 8.43198 1.70384 8.50977 1.92221L9.42919 4.50295C9.59761 4.97627 9.53877 5.50086 9.27008 5.9255L8.1389 7.714C8.08053 7.80671 8.04704 7.91291 8.04166 8.02234C8.03628 8.13177 8.05919 8.24073 8.10819 8.33873L9.57247 11.2486C9.62201 11.3465 9.69598 11.43 9.78724 11.491C9.87849 11.5519 9.98393 11.5883 10.0934 11.5965L12.2028 11.7536C12.45 11.7723 12.6898 11.8468 12.9041 11.9715C13.1184 12.0962 13.3016 12.2678 13.44 12.4735L14.9649 14.7488C15.5131 15.5668 15.2204 16.6796 14.3419 17.1209L13.1173 17.7372C12.2409 18.1782 11.1608 18.1421 10.3498 17.5157C8.27328 15.9137 6.58483 13.8639 5.41021 11.519C4.22706 9.17866 3.58701 6.6016 3.5377 3.97966C3.51847 2.95631 4.13343 2.06653 5.00984 1.62552L6.23444 1.00929Z"
@@ -1200,7 +1346,23 @@
                 </svg>
               </span>
               +7 (495) 517-87-73</a></li>
-          <li><a class=" text-[#833000] font-semibold md:text-lg text-base pl-5" href="tel: +7 (925) 517-87-73">+7 (925) 517-87-73</a></li>
+          <li><a class="flex  items-center lg:gap-2 text-[#833000] font-semibold md:text-lg text-base pl-5 lg:pl-0" href="tel: +7 (925) 517-87-73">
+            <span>
+              <svg class="lg:!block hidden" width="19" height="19" viewBox="0 0 19 19" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_13)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.23444 1.00929C6.44159 0.905248 6.66849 0.846416 6.90009 0.836695C7.1317 0.826974 7.36273 0.866585 7.57787 0.952905C7.79301 1.03922 7.98735 1.17028 8.14801 1.33739C8.30867 1.5045 8.43198 1.70384 8.50977 1.92221L9.42919 4.50295C9.59761 4.97627 9.53877 5.50086 9.27008 5.9255L8.1389 7.714C8.08053 7.80671 8.04704 7.91291 8.04166 8.02234C8.03628 8.13177 8.05919 8.24073 8.10819 8.33873L9.57247 11.2486C9.62201 11.3465 9.69598 11.43 9.78724 11.491C9.87849 11.5519 9.98393 11.5883 10.0934 11.5965L12.2028 11.7536C12.45 11.7723 12.6898 11.8468 12.9041 11.9715C13.1184 12.0962 13.3016 12.2678 13.44 12.4735L14.9649 14.7488C15.5131 15.5668 15.2204 16.6796 14.3419 17.1209L13.1173 17.7372C12.2409 18.1782 11.1608 18.1421 10.3498 17.5157C8.27328 15.9137 6.58483 13.8639 5.41021 11.519C4.22706 9.17866 3.58701 6.6016 3.5377 3.97966C3.51847 2.95631 4.13343 2.06653 5.00984 1.62552L6.23444 1.00929Z"
+                  fill="currentColor" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_13">
+                  <rect width="15" height="15" fill="white" transform="translate(4.70697) rotate(18.2882)" />
+                </clipPath>
+              </defs>
+            </svg>
+            </span>
+            +7 (925) 517-87-73</a></li>
         </ul>
         <div class="flex flex-col lg:mb-0 mb-6">
           <p class="text-[#833000] text-base md:text-lg">Пн-Пт, с 09.00 до 20.00</p>
@@ -1230,7 +1392,7 @@
           </ul>
         </div>
       </div>
-      <div class="lg:hidden block" >
+      <div class="lg:hidden block">
         <a href="#">
           <img class="max-w-[100px] mx-auto w-full mb-7" src="./img/footer/logo.svg" alt="">
         </a>
@@ -1242,7 +1404,17 @@
   </footer>
   <!-- Footer end -->
 
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 15,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>

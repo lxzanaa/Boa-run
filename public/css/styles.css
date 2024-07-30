@@ -651,6 +651,9 @@ video {
 .h-\[155px\] {
   height: 155px;
 }
+.h-\[230px\] {
+  height: 230px;
+}
 .h-\[295px\] {
   height: 295px;
 }
@@ -750,6 +753,9 @@ video {
 .max-w-\[307px\] {
   max-width: 307px;
 }
+.max-w-\[330px\] {
+  max-width: 330px;
+}
 .max-w-\[367px\] {
   max-width: 367px;
 }
@@ -788,6 +794,12 @@ video {
 }
 .max-w-\[854px\] {
   max-width: 854px;
+}
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+.max-w-\[190px\] {
+  max-width: 190px;
 }
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
@@ -966,6 +978,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1080,6 +1096,9 @@ video {
 }
 .pl-5 {
   padding-left: 1.25rem;
+}
+.pl-6 {
+  padding-left: 1.5rem;
 }
 .pl-\[25px\] {
   padding-left: 25px;
@@ -1268,7 +1287,7 @@ body {
 }
 @media (max-width: 975px) {
     .header__logo{
-        max-width: 150px !important;
+        max-width: 100px !important;
     }
 }
 button{
@@ -1315,6 +1334,11 @@ button{
 
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .md\:mb-0 {
@@ -1577,6 +1601,11 @@ button{
     padding-bottom: 60px;
   }
 
+  .md\:px-\[100px\] {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .md\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -1638,6 +1667,11 @@ button{
     line-height: 1.75rem;
   }
 
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:leading-\[54\.86px\] {
     line-height: 54.86px;
   }
@@ -1660,6 +1694,11 @@ button{
     grid-column: span 4 / span 4;
   }
 
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1674,6 +1713,10 @@ button{
 
   .lg\:\!block {
     display: block !important;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:\!flex {
@@ -1716,6 +1759,10 @@ button{
     max-width: 598px;
   }
 
+  .lg\:max-w-full {
+    max-width: 100%;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1734,6 +1781,26 @@ button{
 
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
+  }
+
+  .lg\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .lg\:gap-2\.5 {
+    gap: 0.625rem;
   }
 
   .lg\:p-11 {
@@ -1758,6 +1825,10 @@ button{
     padding-top: 173px;
   }
 
+  .lg\:pl-0 {
+    padding-left: 0px;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -1775,6 +1846,14 @@ button{
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-\[45px\] {
+    font-size: 45px;
+  }
+
+  .lg\:leading-\[54\.86px\] {
+    line-height: 54.86px;
   }
 
   .lg\:text-black {
