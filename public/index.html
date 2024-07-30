@@ -13,13 +13,108 @@
 <body>
 
 
-  <!-- First modal -->
+  <!-- Header start -->
+  <header class="bg-[#FFCC00] pt-8 pb-7">
+    <div class="max-w-[1200px] px-2.5 mx-auto flex items-center justify-between">
+      <a href="index.html">
+        <img class="max-w-[100px] w-full md:max-w-[303px]" src="./img/header/logo.svg" alt="logo">
+      </a>
+      <div class="flex items-center gap-6">
+        <div class="md:!flex hidden items-center gap-9">
+          <ul class="md:!flex hidden items-center gap-2.5">
+            <li class="flex items-center gap-2.5 text-[#873003] font-bold text-xl ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_266)">
+                  <path
+                    d="M5 0.625C5 0.45924 4.93415 0.300269 4.81694 0.183058C4.69973 0.065848 4.54076 0 4.375 0C4.20924 0 4.05027 0.065848 3.93306 0.183058C3.81585 0.300269 3.75 0.45924 3.75 0.625V1.25H2.5C1.83696 1.25 1.20107 1.51339 0.732233 1.98223C0.263392 2.45107 0 3.08696 0 3.75L0 5H20V3.75C20 3.08696 19.7366 2.45107 19.2678 1.98223C18.7989 1.51339 18.163 1.25 17.5 1.25H16.25V0.625C16.25 0.45924 16.1842 0.300269 16.0669 0.183058C15.9497 0.065848 15.7908 0 15.625 0C15.4592 0 15.3003 0.065848 15.1831 0.183058C15.0658 0.300269 15 0.45924 15 0.625V1.25H5V0.625ZM20 17.5V6.25H0V17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H17.5C18.163 20 18.7989 19.7366 19.2678 19.2678C19.7366 18.7989 20 18.163 20 17.5ZM13.5675 11.0675L9.8175 14.8175C9.75944 14.8757 9.69047 14.9219 9.61454 14.9534C9.53861 14.9849 9.45721 15.0011 9.375 15.0011C9.29279 15.0011 9.21139 14.9849 9.13546 14.9534C9.05953 14.9219 8.99056 14.8757 8.9325 14.8175L7.0575 12.9425C6.94014 12.8251 6.87421 12.666 6.87421 12.5C6.87421 12.334 6.94014 12.1749 7.0575 12.0575C7.17486 11.9401 7.33403 11.8742 7.5 11.8742C7.66597 11.8742 7.82514 11.9401 7.9425 12.0575L9.375 13.4913L12.6825 10.1825C12.7999 10.0651 12.959 9.99921 13.125 9.99921C13.291 9.99921 13.4501 10.0651 13.5675 10.1825C13.6849 10.2999 13.7508 10.459 13.7508 10.625C13.7508 10.791 13.6849 10.9501 13.5675 11.0675Z"
+                    fill="currentColor" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_266">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              ПН-ВС
+            </li>
+            <li class="flex items-center gap-2.5 text-[#873003] font-bold text-xl ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_264)">
+                  <path
+                    d="M20 10C20 12.6522 18.9464 15.1957 17.0711 17.0711C15.1957 18.9464 12.6522 20 10 20C7.34784 20 4.8043 18.9464 2.92893 17.0711C1.05357 15.1957 0 12.6522 0 10C0 7.34784 1.05357 4.8043 2.92893 2.92893C4.8043 1.05357 7.34784 0 10 0C12.6522 0 15.1957 1.05357 17.0711 2.92893C18.9464 4.8043 20 7.34784 20 10ZM10 4.375C10 4.20924 9.93415 4.05027 9.81694 3.93306C9.69973 3.81585 9.54076 3.75 9.375 3.75C9.20924 3.75 9.05027 3.81585 8.93306 3.93306C8.81585 4.05027 8.75 4.20924 8.75 4.375V11.25C8.75004 11.3602 8.77919 11.4684 8.83451 11.5636C8.88982 11.6589 8.96934 11.7379 9.065 11.7925L13.44 14.2925C13.5836 14.3701 13.7518 14.3885 13.9087 14.3437C14.0657 14.2989 14.1988 14.1944 14.2798 14.0527C14.3608 13.9111 14.3831 13.7433 14.342 13.5854C14.301 13.4274 14.1997 13.2918 14.06 13.2075L10 10.8875V4.375Z"
+                    fill="currentColor" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_264">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              9:00 - 20:00
+            </li>
+          </ul>
+          <ul class="flex items-center gap-2.5">
+            <li>
+              <a class="text-[#873003] " href="#">
+                <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.075 2.46208C0.226227 1.76263 0.597983 1.13812 1.12938 0.690822C1.66078 0.243523 2.32033 -4.82828e-05 3 7.17905e-09H21C21.6797 -4.82828e-05 22.3392 0.243523 22.8706 0.690822C23.402 1.13812 23.7738 1.76263 23.925 2.46208L12 10.1555L0.075 2.46208ZM0 4.27025V15.5182L8.7045 9.88475L0 4.27025ZM10.1415 10.8142L0.2865 17.1903C0.52999 17.7322 0.91429 18.19 1.39467 18.5104C1.87505 18.8308 2.43176 19.0006 3 19H21C21.5681 19.0001 22.1246 18.83 22.6048 18.5093C23.0849 18.1886 23.4688 17.7307 23.712 17.1887L13.857 10.8126L12 12.0112L10.1415 10.8142ZM15.2955 9.88633L24 15.5182V4.27025L15.2955 9.88633Z"
+                    fill="currentColor" />
+                </svg>
+              </a>
+            </li>
+            <li><a class="flex items-center gap-2.5 text-[#873003] font-bold text-xl" href="#">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_260)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.67968 1.34605C8.95588 1.20732 9.25841 1.12888 9.56722 1.11592C9.87603 1.10296 10.1841 1.15577 10.4709 1.27087C10.7578 1.38596 11.0169 1.5607 11.2311 1.78351C11.4453 2.00632 11.6097 2.27211 11.7135 2.56327L12.9394 6.00426C13.1639 6.63535 13.0855 7.33481 12.7272 7.90099L11.219 10.2857C11.1411 10.4093 11.0965 10.5509 11.0893 10.6968C11.0821 10.8427 11.1127 10.988 11.178 11.1186L13.1304 14.9985C13.1964 15.1291 13.2951 15.2404 13.4167 15.3216C13.5384 15.4029 13.679 15.4514 13.8249 15.4624L16.6375 15.6718C16.9671 15.6967 17.2868 15.7961 17.5725 15.9623C17.8582 16.1286 18.1026 16.3574 18.2871 16.6317L20.3203 19.6654C21.0512 20.7561 20.6609 22.2398 19.4896 22.8282L17.8568 23.6499C16.6883 24.2379 15.2482 24.1898 14.1669 23.3546C11.3981 21.2186 9.14687 18.4856 7.5807 15.359C6.00318 12.2385 5.14978 8.80246 5.08403 5.30654C5.05839 3.94207 5.87834 2.7557 7.04688 2.16768L8.67968 1.34605Z"
+                      fill="currentColor" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_260">
+                      <rect width="20" height="20" fill="white" transform="translate(6.64307) rotate(18.2882)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                +7 (495) 517-87-73
+              </a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-3" >
+          <div class="flex md:hidden items-center gap-9">
+            <ul class="flex flex-col">
+              <li class="flex items-center gap-1 text-[#873003] font-bold lg:text-xl text-base">
+                <span>
+                  <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.0625 2.07333C0.188523 1.48432 0.498319 0.958417 0.941152 0.581744C1.38398 0.205072 1.93361 -4.06592e-05 2.5 6.04552e-09H17.5C18.0664 -4.06592e-05 18.616 0.205072 19.0588 0.581744C19.5017 0.958417 19.8115 1.48432 19.9375 2.07333L10 8.552L0.0625 2.07333ZM0 3.596V13.068L7.25375 8.324L0 3.596ZM8.45125 9.10667L0.23875 14.476C0.441658 14.9324 0.761908 15.3179 1.16223 15.5877C1.56255 15.8575 2.02647 16.0005 2.5 16H17.5C17.9735 16.0001 18.4372 15.8568 18.8373 15.5868C19.2374 15.3168 19.5574 14.9311 19.76 14.4747L11.5475 9.10533L10 10.1147L8.45125 9.10667ZM12.7462 8.32533L20 13.068V3.596L12.7462 8.32533Z"
+                      fill="currentColor" />
+                  </svg>
+                </span>
+                +7 (495) 517-87-73
+              </li>
+              <li class="text-[#873003] font-bold lg:text-xl text-base">
+                ПН-ВС 9:00 - 20:00
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button id="open-modal-tel"
+              class="text-white font-bold md:text-[8px] text-xs md:leading-[9.68px] leading-[16.94px] bg-[#873003] py-2 md:px-7 px-2 rounded-full cursor-pointer">Обратный
+              звонок</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+   <!-- First modal -->
   <!-- Modal Overlay -->
   <div id="modal-overlay" class="fixed inset-0 bg-black/50 opacity-0 transition-opacity duration-300 z-40 hidden">
   </div>
   <!-- Modal Content -->
   <div id="modal-content"
-    class="fixed flex items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
+    class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[1070px] w-full flex items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
     <div
       class="bg-white border max-w-[1070px] w-full border-[#FFCC00] p-8 text-center transform transition-transform duration-300">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-8">Оставляйте телефон, и мы перезвоним
@@ -133,155 +228,8 @@
 
   <!-- First modal -->
 
-  <!-- Second modal start -->
-  <!-- Modal Overlay -->
-  <div id="modal-overlay2" class="fixed inset-0 bg-black/50 opacity-0 transition-opacity duration-300 z-40 hidden">
-  </div>
-
-  <!-- Modal Content -->
-  <div id="modal-content2"
-    class="fixed  flex max-w-[1210px] w-full items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
-    <div class="text-center  scale-90 max-w-[1210px]! w-full px-5 mx-auto bg-[#FFCC00] py-[60px]">
-      <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Ответим на все вопросы во <br> время
-        бесплатной консультации</h2>
-      <p class="text-[#873003] text-2xl mb-[50px]">Наш менеджер перезвонит вам в рабочее время.</p>
-
-      <form class="max-w-[444px] w-full mb-2.5 mx-auto">
-        <div class="grid grid-cols-2 gap-2.5 mb-10">
-          <input class=" py-3 px-5 rounded-[10px] outline-none text-black font-medium"
-            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Имя*" required type="text">
-          <input class=" py-3 px-5 rounded-[10px] outline-none text-black font-medium"
-            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Email" required type="email">
-          <input required class="col-span-2 py-3 px-5 rounded-[10px] outline-none text-black font-medium"
-            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Номер телефона*" type="number">
-        </div>
-        <button
-          class="button-shadow py-6 text-white font-semibold text-lg rounded-[20px] bg-[#873003] w-full mb-2.5">Оставить
-          заявку</button>
-        <p class="text-[#873003] font-light text-sm text-left">Нажимая на кнопку, я даю согласие на обработку <br>
-          персональных данных</p>
-      </form>
-    </div>
-  </div>
-  <script>
-    // Get the modal elements
-    const modalContent2 = document.getElementById('modal-content2');
-    const modalOverlay2 = document.getElementById('modal-overlay2');
-    const openModalButton2 = document.getElementById('open-modal-tel2');
-
-    // Function to open the modal
-    function openModal() {
-      modalOverlay2.classList.remove('hidden');
-      modalOverlay2.classList.add('opacity-100');
-      modalContent2.classList.remove('hidden', 'opacity-0', 'scale-90');
-      modalContent2.classList.add('opacity-100', 'scale-100');
-      document.body.style.overflow = 'hidden';
-    }
-
-    // Function to close the modal
-    function closeModal() {
-      modalContent2.classList.remove('opacity-100', 'scale-100');
-      modalContent2.classList.add('opacity-0', 'scale-90');
-      modalOverlay2.classList.remove('opacity-100');
-      modalOverlay2.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-
-    // Event listener for opening the modal
-    openModalButton2.addEventListener('click', openModal);
-
-    // Event listener for closing the modal when clicking on the overlay
-    modalOverlay2.addEventListener('click', closeModal);
-
-    // Prevent clicks inside the modal content from closing the modal
-    modalContent2.addEventListener('click', (event) => {
-      event.stopPropagation();
-    });
-
-
-  </script>
-  <!-- Second modal end -->
-
-
-
-  <!-- Header start -->
-  <header class="bg-[#FFCC00] pt-8 pb-7">
-    <div class="max-w-[1210px] px-5 mx-auto flex items-center justify-between">
-      <a href="index.html">
-        <img src="./img/header/logo.svg" alt="logo">
-      </a>
-      <div class="flex items-center gap-6">
-        <div class="flex items-center gap-9">
-          <ul class="flex items-center gap-2.5">
-            <li class="flex items-center gap-2.5 text-[#873003] font-bold text-xl ">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_1_266)">
-                  <path
-                    d="M5 0.625C5 0.45924 4.93415 0.300269 4.81694 0.183058C4.69973 0.065848 4.54076 0 4.375 0C4.20924 0 4.05027 0.065848 3.93306 0.183058C3.81585 0.300269 3.75 0.45924 3.75 0.625V1.25H2.5C1.83696 1.25 1.20107 1.51339 0.732233 1.98223C0.263392 2.45107 0 3.08696 0 3.75L0 5H20V3.75C20 3.08696 19.7366 2.45107 19.2678 1.98223C18.7989 1.51339 18.163 1.25 17.5 1.25H16.25V0.625C16.25 0.45924 16.1842 0.300269 16.0669 0.183058C15.9497 0.065848 15.7908 0 15.625 0C15.4592 0 15.3003 0.065848 15.1831 0.183058C15.0658 0.300269 15 0.45924 15 0.625V1.25H5V0.625ZM20 17.5V6.25H0V17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H17.5C18.163 20 18.7989 19.7366 19.2678 19.2678C19.7366 18.7989 20 18.163 20 17.5ZM13.5675 11.0675L9.8175 14.8175C9.75944 14.8757 9.69047 14.9219 9.61454 14.9534C9.53861 14.9849 9.45721 15.0011 9.375 15.0011C9.29279 15.0011 9.21139 14.9849 9.13546 14.9534C9.05953 14.9219 8.99056 14.8757 8.9325 14.8175L7.0575 12.9425C6.94014 12.8251 6.87421 12.666 6.87421 12.5C6.87421 12.334 6.94014 12.1749 7.0575 12.0575C7.17486 11.9401 7.33403 11.8742 7.5 11.8742C7.66597 11.8742 7.82514 11.9401 7.9425 12.0575L9.375 13.4913L12.6825 10.1825C12.7999 10.0651 12.959 9.99921 13.125 9.99921C13.291 9.99921 13.4501 10.0651 13.5675 10.1825C13.6849 10.2999 13.7508 10.459 13.7508 10.625C13.7508 10.791 13.6849 10.9501 13.5675 11.0675Z"
-                    fill="currentColor" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1_266">
-                    <rect width="20" height="20" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              ПН-ВС
-            </li>
-            <li class="flex items-center gap-2.5 text-[#873003] font-bold text-xl ">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_1_264)">
-                  <path
-                    d="M20 10C20 12.6522 18.9464 15.1957 17.0711 17.0711C15.1957 18.9464 12.6522 20 10 20C7.34784 20 4.8043 18.9464 2.92893 17.0711C1.05357 15.1957 0 12.6522 0 10C0 7.34784 1.05357 4.8043 2.92893 2.92893C4.8043 1.05357 7.34784 0 10 0C12.6522 0 15.1957 1.05357 17.0711 2.92893C18.9464 4.8043 20 7.34784 20 10ZM10 4.375C10 4.20924 9.93415 4.05027 9.81694 3.93306C9.69973 3.81585 9.54076 3.75 9.375 3.75C9.20924 3.75 9.05027 3.81585 8.93306 3.93306C8.81585 4.05027 8.75 4.20924 8.75 4.375V11.25C8.75004 11.3602 8.77919 11.4684 8.83451 11.5636C8.88982 11.6589 8.96934 11.7379 9.065 11.7925L13.44 14.2925C13.5836 14.3701 13.7518 14.3885 13.9087 14.3437C14.0657 14.2989 14.1988 14.1944 14.2798 14.0527C14.3608 13.9111 14.3831 13.7433 14.342 13.5854C14.301 13.4274 14.1997 13.2918 14.06 13.2075L10 10.8875V4.375Z"
-                    fill="currentColor" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1_264">
-                    <rect width="20" height="20" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              9:00 - 20:00
-            </li>
-          </ul>
-          <ul class="flex items-center gap-2.5">
-            <li>
-              <a class="text-[#873003] " href="#">
-                <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0.075 2.46208C0.226227 1.76263 0.597983 1.13812 1.12938 0.690822C1.66078 0.243523 2.32033 -4.82828e-05 3 7.17905e-09H21C21.6797 -4.82828e-05 22.3392 0.243523 22.8706 0.690822C23.402 1.13812 23.7738 1.76263 23.925 2.46208L12 10.1555L0.075 2.46208ZM0 4.27025V15.5182L8.7045 9.88475L0 4.27025ZM10.1415 10.8142L0.2865 17.1903C0.52999 17.7322 0.91429 18.19 1.39467 18.5104C1.87505 18.8308 2.43176 19.0006 3 19H21C21.5681 19.0001 22.1246 18.83 22.6048 18.5093C23.0849 18.1886 23.4688 17.7307 23.712 17.1887L13.857 10.8126L12 12.0112L10.1415 10.8142ZM15.2955 9.88633L24 15.5182V4.27025L15.2955 9.88633Z"
-                    fill="currentColor" />
-                </svg>
-              </a>
-            </li>
-            <li><a class="flex items-center gap-2.5 text-[#873003] font-bold text-xl" href="#">
-                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_260)">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M8.67968 1.34605C8.95588 1.20732 9.25841 1.12888 9.56722 1.11592C9.87603 1.10296 10.1841 1.15577 10.4709 1.27087C10.7578 1.38596 11.0169 1.5607 11.2311 1.78351C11.4453 2.00632 11.6097 2.27211 11.7135 2.56327L12.9394 6.00426C13.1639 6.63535 13.0855 7.33481 12.7272 7.90099L11.219 10.2857C11.1411 10.4093 11.0965 10.5509 11.0893 10.6968C11.0821 10.8427 11.1127 10.988 11.178 11.1186L13.1304 14.9985C13.1964 15.1291 13.2951 15.2404 13.4167 15.3216C13.5384 15.4029 13.679 15.4514 13.8249 15.4624L16.6375 15.6718C16.9671 15.6967 17.2868 15.7961 17.5725 15.9623C17.8582 16.1286 18.1026 16.3574 18.2871 16.6317L20.3203 19.6654C21.0512 20.7561 20.6609 22.2398 19.4896 22.8282L17.8568 23.6499C16.6883 24.2379 15.2482 24.1898 14.1669 23.3546C11.3981 21.2186 9.14687 18.4856 7.5807 15.359C6.00318 12.2385 5.14978 8.80246 5.08403 5.30654C5.05839 3.94207 5.87834 2.7557 7.04688 2.16768L8.67968 1.34605Z"
-                      fill="currentColor" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1_260">
-                      <rect width="20" height="20" fill="white" transform="translate(6.64307) rotate(18.2882)" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                +7 (495) 517-87-73
-              </a></li>
-          </ul>
-        </div>
-        <div>
-          <button id="open-modal-tel"
-            class="text-white font-bold text-[8px] leading-[9.68px] bg-[#873003] py-2 px-7 rounded-full cursor-pointer">Обратный
-            звонок</button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <nav class="py-6">
-    <div class="max-w-[1210px] px-5 mx-auto">
+  <nav class="py-6 md:!block hidden">
+    <div class="max-w-[1200px] px-2.5 mx-auto">
       <ul class="flex items-center gap-5 justify-between pb-4 border-b border-b-[#FFCC00] max-w-[854px] w-full">
         <li><a class="text-black text-lg font-normal hover:text-[#FFCC00] transition-all" href="#">Совместимость</a>
         </li>
@@ -299,31 +247,32 @@
 
   <!-- Hero start -->
   <section class="pt-6 pb-[60px]">
-    <div class="max-w-[1210px] px-5 mx-auto">
-      <h1 class="text-black font-bold text-5xl mb-11">Оригинальные ножевые блоки BAORUN стандарт А5</h1>
-      <div class="flex items-center gap-8 justify-between">
-        <div>
-          <h2 class="text-black font-medium text-[35px] leading-[42.67px] mb-4">Сделайте стрижку питомцев легкой,
+    <div class="max-w-[1200px] mx-auto">
+      <h1 class="text-black px-2.5 font-bold md:text-5xl text-2xl lg:mb-11 mb-3">Оригинальные ножевые блоки BAORUN стандарт А5</h1>
+      <p class="text-black px-2.5 font-medium text-[22px]  md:!hidden block mb-6" >Сделайте стрижку питомцев легкой, быстрой и безопасной</p>
+      <div class="lg:flex items-center gap-8 justify-between">
+        <div class="px-2.5" >
+          <h2 class="text-black hidden md:!block  font-medium text-[35px] leading-[42.67px] mb-4">Сделайте стрижку питомцев легкой,
             быстрой и безопасной</h2>
           <div class="relative mb-1.5">
             <div
-              class="inline-flex absolute top-[13px] left-0 z-10 text-black font-medium text-lg py-1.5 px-2.5 bg-[#FFCC00] rounded-[10px]">
+              class="inline-flex absolute md:top-[13px] top-[-5px] md:left-0 z-10 text-black font-medium md:text-lg text-base py-0 md:py-1.5 px-2.5 bg-[#FFCC00] rounded-[10px]">
               острые без затачивания</div>
             <div
-              class="inline-flex absolute top-[146px] right-0 z-10 text-black font-medium text-lg py-1.5 px-2.5 bg-[#FFCC00] rounded-[10px]">
+              class="inline-flex absolute md:top-[146px] bottom-[125px] right-0 z-10 text-black font-medium md:text-lg text-base py-0 md:py-1.5 px-2.5 bg-[#FFCC00] rounded-[10px]">
               неприхотливые в работе</div>
             <div
-              class="inline-flex absolute z-10 bottom-[46px] left-[50px] text-black font-medium text-lg py-1.5 px-2.5 bg-[#FFCC00] rounded-[10px]">
+              class="inline-flex absolute z-10 md:bottom-[46px] bottom-[29px] left-[50px] text-black font-medium md:text-lg text-base py-0 md:py-1.5 px-2.5 bg-[#FFCC00] rounded-[10px]">
               из прочной антикоррозийной стали</div>
-            <img class="max-w-[450px] w-full mx-auto pl-[25px]" src="./img/hero/hero.png" alt="hero">
+            <img class="md:max-w-[450px] max-w-[300px] w-full mx-auto pl-[25px]" src="./img/hero/hero.png" alt="hero">
           </div>
           <div class="relative text-right">
-            <p class="text-black text-left font-light text-lg pl-2.5 border-l border-l-[#FFCC00] mb-3">Для
+            <p class="text-black text-left font-light text-base md:text-lg pl-2.5 border-l border-l-[#FFCC00] mb-3">Для
               профессиональных
               груминг-салонов <br> Для владельцев собак и кошек</p>
-            <div class="text-black font-medium text-lg py-3 px-8 rounded-full border border-[#FFCC00] inline-flex">На
+            <div class="text-black font-medium text-lg py-3 px-8 rounded-full border border-[#FFCC00] lg:!inline-flex hidden">На
               какие машинки подходят лезвия</div>
-            <span class="flex absolute right-[180px]">
+            <span class="lg:!flex hidden absolute right-[180px]">
               <svg width="88" height="54" viewBox="0 0 88 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16.786 53.5449C17.1991 53.5751 17.5585 53.2647 17.5887 52.8516L18.0809 46.1196C18.1111 45.7065 17.8007 45.3471 17.3875 45.3169C16.9744 45.2867 16.6151 45.5971 16.5849 46.0102L16.1474 51.9942L10.1633 51.5568C9.75024 51.5266 9.39086 51.837 9.36066 52.2501C9.33046 52.6632 9.64087 53.0226 10.054 53.0528L16.786 53.5449ZM17.4083 52.3067C17.1718 52.0329 16.9383 51.7614 16.7079 51.4923L15.5685 52.4678C15.8003 52.7386 16.0352 53.0117 16.2731 53.2872L17.4083 52.3067ZM14.7159 49.1327C14.2912 48.6221 13.8785 48.1207 13.4775 47.6283L12.3144 48.5754C12.7188 49.072 13.1348 49.5775 13.5627 50.0919L14.7159 49.1327ZM11.6378 45.3272C11.2008 44.7699 10.7805 44.2252 10.3765 43.6931L9.18176 44.6C9.5907 45.1387 10.0158 45.6895 10.4573 46.2527L11.6378 45.3272ZM8.66774 41.3816C8.25489 40.8066 7.86351 40.2481 7.49309 39.7056L6.25429 40.5514C6.63181 41.1043 7.03002 41.6726 7.44933 42.2565L8.66774 41.3816ZM5.88572 37.2414C5.52033 36.6513 5.18417 36.0836 4.87631 35.5377L3.56975 36.2745C3.8885 36.8398 4.23517 37.4251 4.61039 38.0311L5.88572 37.2414ZM3.56676 32.9822C3.26499 32.318 3.01664 31.6964 2.81836 31.1153L1.39872 31.5997C1.61486 32.2331 1.88201 32.9003 2.2011 33.6026L3.56676 32.9822ZM2.21865 28.4036C2.17212 27.7455 2.22382 27.1803 2.35374 26.6939L0.904547 26.3068C0.725063 26.9787 0.666109 27.7134 0.722381 28.5094L2.21865 28.4036ZM3.73874 24.6951C4.16669 24.3788 4.69099 24.1072 5.31549 23.8813L4.80531 22.4707C4.07433 22.7351 3.41478 23.0693 2.84722 23.4887L3.73874 24.6951ZM8.07564 23.2583C8.67271 23.1821 9.30985 23.1286 9.98497 23.0962L9.91306 21.598C9.20484 21.632 8.52776 21.6884 7.88557 21.7704L8.07564 23.2583ZM12.925 23.0753C13.5691 23.0926 14.2356 23.1227 14.9229 23.164L15.013 21.6667C14.3113 21.6245 13.6281 21.5937 12.9655 21.5758L12.925 23.0753ZM17.9074 23.3985C18.5449 23.4588 19.1956 23.5259 19.8586 23.5989L20.0229 22.108C19.3532 22.0341 18.6946 21.9662 18.0485 21.9052L17.9074 23.3985ZM22.8548 23.9563C23.4991 24.0382 24.1523 24.124 24.8137 24.213L25.0137 22.7264C24.3493 22.637 23.6924 22.5507 23.044 22.4683L22.8548 23.9563ZM27.7999 24.6263C28.4513 24.7185 29.1087 24.8125 29.7715 24.9078L29.9849 23.423C29.3214 23.3277 28.6629 23.2335 28.0101 23.1411L27.7999 24.6263ZM32.7548 25.3377C33.4107 25.4321 34.0707 25.5267 34.7339 25.621L34.945 24.1359C34.283 24.0418 33.6239 23.9473 32.9685 23.853L32.7548 25.3377ZM37.72 26.0384C38.3802 26.1287 39.0425 26.2179 39.7065 26.3053L39.9023 24.8181C39.2412 24.7311 38.5814 24.6423 37.9235 24.5522L37.72 26.0384ZM42.6989 26.6845C43.3638 26.7651 44.0292 26.8431 44.6946 26.918L44.8624 25.4275C44.2016 25.3531 43.5404 25.2755 42.8795 25.1954L42.6989 26.6845ZM47.6955 27.2329C48.3657 27.2977 49.0349 27.3585 49.7025 27.4146L49.8282 25.9198C49.1673 25.8643 48.5043 25.8041 47.8399 25.7399L47.6955 27.2329ZM52.7135 27.6352C53.3893 27.6769 54.0625 27.7129 54.7322 27.7424L54.7984 26.2439C54.138 26.2147 53.4736 26.1792 52.8059 26.138L52.7135 27.6352ZM57.7547 27.8309C58.4353 27.84 59.1112 27.8413 59.7815 27.834L59.7652 26.3341C59.1077 26.3412 58.444 26.34 57.7748 26.331L57.7547 27.8309ZM62.8149 27.738C63.4969 27.7013 64.1716 27.654 64.8381 27.5953L64.7066 26.1011C64.058 26.1582 63.4002 26.2043 62.7342 26.2402L62.8149 27.738ZM67.8721 27.2379C68.5474 27.1366 69.2122 27.021 69.8653 26.8904L69.571 25.4195C68.9431 25.5452 68.3023 25.6566 67.6495 25.7545L67.8721 27.2379ZM72.8612 26.1556C73.5206 25.9611 74.1648 25.7471 74.7923 25.5123L74.2667 24.1074C73.6744 24.329 73.0641 24.5318 72.4367 24.7169L72.8612 26.1556ZM77.6236 24.2453C78.2426 23.9166 78.8395 23.5611 79.4122 23.1769L78.5767 21.9312C78.0488 22.2853 77.4962 22.6146 76.9202 22.9204L77.6236 24.2453ZM81.8441 21.2261C82.3465 20.744 82.8202 20.2304 83.263 19.6837L82.0975 18.7395C81.6948 19.2367 81.2636 19.7043 80.8056 20.1438L81.8441 21.2261ZM84.9908 17.0894C85.3178 16.4845 85.6147 15.8499 85.88 15.1844L84.4866 14.6289C84.2424 15.2415 83.9701 15.8234 83.6713 16.376L84.9908 17.0894ZM86.8017 12.2205C86.9512 11.5766 87.0763 10.9094 87.1763 10.2184L85.6917 10.0036C85.5976 10.6546 85.4802 11.2801 85.3406 11.8812L86.8017 12.2205ZM87.4486 7.10994C87.4713 6.46388 87.4751 5.79985 87.4596 5.11741L85.9599 5.1515C85.9748 5.80628 85.9711 6.44138 85.9495 7.05732L87.4486 7.10994ZM87.27 2.04309C87.2352 1.68836 87.1957 1.32919 87.1516 0.965514L85.6625 1.14622C85.7053 1.49875 85.7435 1.84652 85.7772 2.18959L87.27 2.04309ZM16.786 53.5449C17.1991 53.5751 17.5585 53.2647 17.5887 52.8516L18.0809 46.1196C18.1111 45.7065 17.8007 45.3471 17.3875 45.3169C16.9744 45.2867 16.6151 45.5971 16.5849 46.0102L16.1474 51.9942L10.1633 51.5568C9.75024 51.5266 9.39086 51.837 9.36066 52.2501C9.33046 52.6632 9.64087 53.0226 10.054 53.0528L16.786 53.5449ZM17.4083 52.3067C17.1718 52.0329 16.9383 51.7614 16.7079 51.4923L15.5685 52.4678C15.8003 52.7386 16.0352 53.0117 16.2731 53.2872L17.4083 52.3067ZM14.7159 49.1327C14.2912 48.6221 13.8785 48.1207 13.4775 47.6283L12.3144 48.5754C12.7188 49.072 13.1348 49.5775 13.5627 50.0919L14.7159 49.1327ZM11.6378 45.3272C11.2008 44.7699 10.7805 44.2252 10.3765 43.6931L9.18176 44.6C9.5907 45.1387 10.0158 45.6895 10.4573 46.2527L11.6378 45.3272ZM8.66774 41.3816C8.25489 40.8066 7.86351 40.2481 7.49309 39.7056L6.25429 40.5514C6.63181 41.1043 7.03002 41.6726 7.44933 42.2565L8.66774 41.3816ZM5.88572 37.2414C5.52033 36.6513 5.18417 36.0836 4.87631 35.5377L3.56975 36.2745C3.8885 36.8398 4.23517 37.4251 4.61039 38.0311L5.88572 37.2414ZM3.56676 32.9822C3.26499 32.318 3.01664 31.6964 2.81836 31.1153L1.39872 31.5997C1.61486 32.2331 1.88201 32.9003 2.2011 33.6026L3.56676 32.9822ZM2.21865 28.4036C2.17212 27.7455 2.22382 27.1803 2.35374 26.6939L0.904547 26.3068C0.725063 26.9787 0.666109 27.7134 0.722381 28.5094L2.21865 28.4036ZM3.73874 24.6951C4.16669 24.3788 4.69099 24.1072 5.31549 23.8813L4.80531 22.4707C4.07433 22.7351 3.41478 23.0693 2.84722 23.4887L3.73874 24.6951ZM8.07564 23.2583C8.67271 23.1821 9.30985 23.1286 9.98497 23.0962L9.91306 21.598C9.20484 21.632 8.52776 21.6884 7.88557 21.7704L8.07564 23.2583ZM12.925 23.0753C13.5691 23.0926 14.2356 23.1227 14.9229 23.164L15.013 21.6667C14.3113 21.6245 13.6281 21.5937 12.9655 21.5758L12.925 23.0753ZM17.9074 23.3985C18.5449 23.4588 19.1956 23.5259 19.8586 23.5989L20.0229 22.108C19.3532 22.0341 18.6946 21.9662 18.0485 21.9052L17.9074 23.3985ZM22.8548 23.9563C23.4991 24.0382 24.1523 24.124 24.8137 24.213L25.0137 22.7264C24.3493 22.637 23.6924 22.5507 23.044 22.4683L22.8548 23.9563ZM27.7999 24.6263C28.4513 24.7185 29.1087 24.8125 29.7715 24.9078L29.9849 23.423C29.3214 23.3277 28.6629 23.2335 28.0101 23.1411L27.7999 24.6263ZM32.7548 25.3377C33.4107 25.4321 34.0707 25.5267 34.7339 25.621L34.945 24.1359C34.283 24.0418 33.6239 23.9473 32.9685 23.853L32.7548 25.3377ZM37.72 26.0384C38.3802 26.1287 39.0425 26.2179 39.7065 26.3053L39.9023 24.8181C39.2412 24.7311 38.5814 24.6423 37.9235 24.5522L37.72 26.0384ZM42.6989 26.6845C43.3638 26.7651 44.0292 26.8431 44.6946 26.918L44.8624 25.4275C44.2016 25.3531 43.5404 25.2755 42.8795 25.1954L42.6989 26.6845ZM47.6955 27.2329C48.3657 27.2977 49.0349 27.3585 49.7025 27.4146L49.8282 25.9198C49.1673 25.8643 48.5043 25.8041 47.8399 25.7399L47.6955 27.2329ZM52.7135 27.6352C53.3893 27.6769 54.0625 27.7129 54.7322 27.7424L54.7984 26.2439C54.138 26.2147 53.4736 26.1792 52.8059 26.138L52.7135 27.6352ZM57.7547 27.8309C58.4353 27.84 59.1112 27.8413 59.7815 27.834L59.7652 26.3341C59.1077 26.3412 58.444 26.34 57.7748 26.331L57.7547 27.8309ZM62.8149 27.738C63.4969 27.7013 64.1716 27.654 64.8381 27.5953L64.7066 26.1011C64.058 26.1582 63.4002 26.2043 62.7342 26.2402L62.8149 27.738ZM67.8721 27.2379C68.5474 27.1366 69.2122 27.021 69.8653 26.8904L69.571 25.4195C68.9431 25.5452 68.3023 25.6566 67.6495 25.7545L67.8721 27.2379ZM72.8612 26.1556C73.5206 25.9611 74.1648 25.7471 74.7923 25.5123L74.2667 24.1074C73.6744 24.329 73.0641 24.5318 72.4367 24.7169L72.8612 26.1556ZM77.6236 24.2453C78.2426 23.9166 78.8395 23.5611 79.4122 23.1769L78.5767 21.9312C78.0488 22.2853 77.4962 22.6146 76.9202 22.9204L77.6236 24.2453ZM81.8441 21.2261C82.3465 20.744 82.8202 20.2304 83.263 19.6837L82.0975 18.7395C81.6948 19.2367 81.2636 19.7043 80.8056 20.1438L81.8441 21.2261ZM84.9908 17.0894C85.3178 16.4845 85.6147 15.8499 85.88 15.1844L84.4866 14.6289C84.2424 15.2415 83.9701 15.8234 83.6713 16.376L84.9908 17.0894ZM86.8017 12.2205C86.9512 11.5766 87.0763 10.9094 87.1763 10.2184L85.6917 10.0036C85.5976 10.6546 85.4802 11.2801 85.3406 11.8812L86.8017 12.2205ZM87.4486 7.10994C87.4713 6.46388 87.4751 5.79985 87.4596 5.11741L85.9599 5.1515C85.9748 5.80628 85.9711 6.44138 85.9495 7.05732L87.4486 7.10994ZM87.27 2.04309C87.2352 1.68836 87.1957 1.32919 87.1516 0.965514L85.6625 1.14622C85.7053 1.49875 85.7435 1.84652 85.7772 2.18959L87.27 2.04309Z"
@@ -332,30 +281,30 @@
             </span>
           </div>
         </div>
-        <div class="bg-[#FFCC00] p-16 rounded-[20px] max-w-[568px] w-full text-center">
-          <h3 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-1">Успейте заказать!</h3>
-          <p class="text-black text-4xl font-normal block mb-11">ножи для машинок <span
+        <div class="bg-[#FFCC00] md:p-16 py-5 rounded-[20px] lg:max-w-[568px] w-full text-center">
+          <h3 class="text-[#873003] font-bold md:text-[45px] text-[26px] leading-[31.69px] md:leading-[54.86px] mb-1">Успейте заказать!</h3>
+          <p class="text-black md:text-4xl text-[22px] font-normal block md:mb-11 mb-5">ножи для машинок <span
               class="text-[#873003] font-bold block">со скидкой 30%</span></p>
-          <p class="text-[#873003] font-bold text-xl mb-3">До окончания акции осталось:</p>
-          <ul class="flex items-center gap-5 mb-11 justify-center">
+          <p class="text-[#873003] font-bold md:text-xl text-base mb-3">До окончания акции осталось:</p>
+          <ul class="flex items-center gap-5 md:mb-11 mb-5 justify-center">
             <li>
-              <div class="text-black font-bold inline-flex rounded-[10px] text-4xl py-4 px-5 border"
+              <div class="text-black font-bold inline-flex rounded-[10px] md:text-4xl text-3xl py-4 px-5 border"
                 style="border: 3px solid #FFFFFF">03</div>
-              <p class="text-black text-lg text-center">дня</p>
+              <p class="text-black md:text-lg text-base text-center">дня</p>
             </li>
             <li>
-              <div class="text-black font-bold inline-flex rounded-[10px] text-4xl py-4 px-5 border"
+              <div class="text-black font-bold inline-flex rounded-[10px] md:text-4xl text-3xl py-4 px-5 border"
                 style="border: 3px solid #FFFFFF">18</div>
-              <p class="text-black text-lg text-center">часов</p>
+              <p class="text-black md:text-lg text-base text-center">часов</p>
             </li>
             <li>
-              <div class="text-black font-bold inline-flex rounded-[10px] text-4xl py-4 px-5 border"
+              <div class="text-black font-bold inline-flex rounded-[10px] md:text-4xl text-3xl py-4 px-5 border"
                 style="border: 3px solid #FFFFFF">04</div>
-              <p class="text-black text-lg text-center">минуты</p>
+              <p class="text-black md:text-lg text-base text-center">минуты</p>
             </li>
           </ul>
           <button
-            class="button-shadow text-white font-bold text-lg py-5 px-5 rounded-[20px] bg-[#873003] w-full">Заказать со
+            class="button-shadow text-white font-bold text-lg py-5 rounded-[20px] bg-[#873003] md:w-full px-[60px]">Заказать со
             скидкой</button>
         </div>
       </div>
@@ -365,7 +314,7 @@
 
   <!-- What machines are compatible with? start -->
   <section class="bg-[#FFCC00] py-[60px]">
-    <div class="max-w-[1210px] px-5 mx-auto">
+    <div class="max-w-[1200px] px-2.5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-14">С какими машинками совместимы</h2>
       <div class="grid grid-cols-3 gap-8 mb-8">
         <div class="bg-white max-w-[367px] min-h-[236px] w-full p-11 rounded-[20px]">
@@ -415,7 +364,7 @@
 
   <!-- Important facts start -->
   <section class="pt-[60px] pb-20">
-    <div class="max-w-[1210px] px-5 mx-auto">
+    <div class="max-w-[1200px] px-2.5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Важные факты о наших ножевых блоках</h2>
       <p class="text-black font-medium text-lg mb-16">Универсальные ножевые блоки к машинкам для стрижки собак и кошек с
         креплением стандарта А5 без возможности
@@ -457,7 +406,7 @@
 
   <!-- Catalog start -->
   <section class="py-[60px] bg-[#F4F4F4]">
-    <div class="max-w-[1210px] px-5 mx-auto">
+    <div class="max-w-[1200px] px-2.5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Каталог товаров</h2>
       <p class="text-black font-medium text-lg mb-8">Ножевые блоки 0,2 / 1,5 / 2,0 / 3,2 / 6,3 / 9,5 / 13 мм</p>
       <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-8 justify-between mb-[60px]">
@@ -638,7 +587,7 @@
 
   <!-- Metal knives BaoRun start -->
   <section class="py-[60px]">
-    <div class="max-w-[1210px] px-5 mx-auto">
+    <div class="max-w-[1200px] px-2.5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-10">Металлические ножи BaoRun – ваше лучшее
         решение</h2>
       <div class="flex gap-8 justify-between">
@@ -691,7 +640,7 @@
 
   <!-- Need further advice? start -->
   <section class="bg-[#FFCC00]">
-    <div class="max-w-[1210px] px-5 mx-auto flex relative">
+    <div class="max-w-[1200px] px-2.5 mx-auto flex relative">
       <div class="py-[120px] max-w-[765px]">
         <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-8">Требуется дополнительная консультация?
         </h2>
@@ -721,7 +670,7 @@
 
   <!-- Why the most demanding clients choose us start -->
   <section class="py-[60px]">
-    <div class="max-w-[1210px] px-5 mx-auto">
+    <div class="max-w-[1200px] px-2.5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-10">Почему нас выбирают самые требовательные
         клиенты</h2>
       <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7 mb-10">
@@ -765,7 +714,7 @@
 
   <!-- What our valued clients say about us start -->
   <section class="py-[60px] bg-[#F4F4F4]">
-    <div class="max-w-[1210px] px-5 mx-auto">
+    <div class="max-w-[1200px] px-2.5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Что о нас говорят наши уважаемые клиенты
       </h2>
       <p class="text-black font-medium text-lg flex items-center gap-[100px] mb-9">Вернем 500 рублей за видеоотзыв.
@@ -872,7 +821,7 @@
 
   <!-- Shipping and payment start -->
   <section class="py-[60px]">
-    <div class="max-w-[1210px] px-5 mx-auto grid grid-cols-7 justify-between items-center gap-5">
+    <div class="max-w-[1200px] px-2.5 mx-auto grid grid-cols-7 justify-between items-center gap-5">
       <div class="col-span-3">
         <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-4">Доставка и оплата</h2>
         <p class="text-black font-medium text-2xl ">Удобные виды доставки</p>
@@ -912,7 +861,7 @@
 
   <!-- FAQ start -->
   <section class="py-[60px]">
-    <div class="max-w-[1210px] px-5 mx-auto ">
+    <div class="max-w-[1200px] px-2.5 mx-auto ">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-14">Часто задаваемые вопросы</h2>
       <div>
         <div class="p-4 border-t-[2px] border-t-[#FFCC00] transition-all duration-300">
@@ -1097,7 +1046,7 @@
 
   <!-- Manager start -->
   <section class="pt-[173px] pb-[60px]">
-    <div class="max-w-[1210px] px-5 mx-auto bg-[#FFCC00] rounded-[50px] relative py-[60px] pl-[98px] flex">
+    <div class="max-w-[1200px] px-2.5 mx-auto bg-[#FFCC00] rounded-[50px] relative py-[60px] pl-[98px] flex">
       <div class="max-w-[612px]">
         <h2 class="text-[#873003] font-bold text-[45px] mb-5">Остались вопросы? <span class="text-[35px] block">Задайте
             их нашему менеджеру.</span></h2>
@@ -1116,7 +1065,7 @@
 
   <!-- Footer start -->
   <footer class="py-9 bg-[#FED007]">
-    <div class="max-w-[1210px] px-5 mx-auto flex justify-between">
+    <div class="max-w-[1200px] px-2.5 mx-auto flex justify-between">
       <div>
         <a href="#">
           <img class="max-w-[303px] w-full mb-7" src="./img/footer/logo.svg" alt="">
