@@ -627,6 +627,12 @@ video {
 .ml-auto {
   margin-left: auto;
 }
+.mr-20 {
+  margin-right: 5rem;
+}
+.mr-14 {
+  margin-right: 3.5rem;
+}
 .block {
   display: block;
 }
@@ -669,6 +675,15 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[337px\] {
+  height: 337px;
+}
+.h-screen {
+  height: 100vh;
+}
+.h-auto {
+  height: auto;
+}
 .max-h-\[100px\] {
   max-height: 100px;
 }
@@ -680,6 +695,9 @@ video {
 }
 .min-h-\[236px\] {
   min-height: 236px;
+}
+.min-h-\[337px\] {
+  min-height: 337px;
 }
 .w-12 {
   width: 3rem;

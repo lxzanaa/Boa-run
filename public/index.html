@@ -13,6 +13,196 @@
 <body>
 
 
+  <!-- First modal -->
+  <!-- Modal Overlay -->
+  <div id="modal-overlay" class="fixed inset-0 bg-black/50 opacity-0 transition-opacity duration-300 z-40 hidden">
+  </div>
+  <!-- Modal Content -->
+  <div id="modal-content"
+    class="fixed flex items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
+    <div
+      class="bg-white border max-w-[1070px] w-full border-[#FFCC00] p-8 text-center transform transition-transform duration-300">
+      <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-8">Оставляйте телефон, и мы перезвоним
+        в рабочее время</h2>
+      <form class="flex flex-col gap-6 justify-center mx-auto" action="">
+        <input class="outline-none text-black font-medium text-xl text-center bg-transparent" type="text"
+          data-format="+* (***) ***-**-**" data-mask="+7 (___) ___-__-__" />
+        <button
+          class="mx-auto inline-flex max-w-[250px] justify-center text-black font-bold text-xl px-6 py-3 rounded-[20px] bg-[#FFCC00] hover:bg-[#e6b800]">Жду
+          звонка</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    // Get the modal elements
+    const modalContent = document.getElementById('modal-content');
+    const modalOverlay = document.getElementById('modal-overlay');
+    const openModalButton = document.getElementById('open-modal-tel');
+
+    // Function to open the modal
+    function openModal() {
+      modalOverlay.classList.remove('hidden');
+      modalOverlay.classList.add('opacity-100');
+      modalContent.classList.remove('hidden', 'opacity-0', 'scale-90');
+      modalContent.classList.add('opacity-100', 'scale-100');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      modalContent.classList.remove('opacity-100', 'scale-100');
+      modalContent.classList.add('opacity-0', 'scale-90');
+      modalOverlay.classList.remove('opacity-100');
+      modalOverlay.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Event listener for opening the modal
+    openModalButton.addEventListener('click', openModal);
+
+    modalOverlay.addEventListener('click', closeModal);
+
+    modalContent.addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
+
+
+  </script>
+  <script>
+    function doFormat(value, pattern, mask) {
+      const strippedValue = value.replace(/[^0-9]/g, "");
+
+      const chars = strippedValue.split('');
+
+
+      let count = 0;
+      let formatted = '';
+
+      for (let i = 0; i < pattern.length; i++) {
+        const char = pattern[i];
+        if (chars[count]) {
+          if (/\*/.test(char)) {
+            formatted += chars[count];
+            count++;
+          } else {
+            formatted += char;
+          }
+        }
+        else if (mask) {
+          const splittedMask = mask.split('');
+
+          if (splittedMask[i]) {
+            formatted += splittedMask[i];
+          }
+        }
+      }
+
+
+      return formatted;
+    }
+
+
+    document.querySelectorAll('[data-mask]').forEach(function (e) {
+
+
+      function format(elem) {
+        const val = doFormat(elem.value, elem.getAttribute('data-format'));
+        elem.value = doFormat(elem.value, elem.getAttribute('data-format'), elem.getAttribute('data-mask'));
+
+        if (elem.createTextRange) {
+          var range = elem.createTextRange();
+          range.move('character', val.length);
+          range.select();
+        } else if (elem.selectionStart) {
+          elem.focus();
+          elem.setSelectionRange(val.length, val.length);
+        }
+      }
+
+      e.addEventListener('keyup', function () {
+        format(e);
+      });
+
+      e.addEventListener('keydown', function () {
+        format(e);
+      });
+
+      format(e)
+    });
+  </script>
+
+  <!-- First modal -->
+
+  <!-- Second modal start -->
+  <!-- Modal Overlay -->
+  <div id="modal-overlay2" class="fixed inset-0 bg-black/50 opacity-0 transition-opacity duration-300 z-40 hidden">
+  </div>
+
+  <!-- Modal Content -->
+  <div id="modal-content2"
+    class="fixed  flex max-w-[1210px] w-full items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
+    <div class="text-center  scale-90 max-w-[1210px]! w-full px-5 mx-auto bg-[#FFCC00] py-[60px]">
+      <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Ответим на все вопросы во <br> время
+        бесплатной консультации</h2>
+      <p class="text-[#873003] text-2xl mb-[50px]">Наш менеджер перезвонит вам в рабочее время.</p>
+
+      <form class="max-w-[444px] w-full mb-2.5 mx-auto">
+        <div class="grid grid-cols-2 gap-2.5 mb-10">
+          <input class=" py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Имя*" required type="text">
+          <input class=" py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Email" required type="email">
+          <input required class="col-span-2 py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Номер телефона*" type="number">
+        </div>
+        <button
+          class="button-shadow py-6 text-white font-semibold text-lg rounded-[20px] bg-[#873003] w-full mb-2.5">Оставить
+          заявку</button>
+        <p class="text-[#873003] font-light text-sm text-left">Нажимая на кнопку, я даю согласие на обработку <br>
+          персональных данных</p>
+      </form>
+    </div>
+  </div>
+  <script>
+    // Get the modal elements
+    const modalContent2 = document.getElementById('modal-content2');
+    const modalOverlay2 = document.getElementById('modal-overlay2');
+    const openModalButton2 = document.getElementById('open-modal-tel2');
+
+    // Function to open the modal
+    function openModal() {
+      modalOverlay2.classList.remove('hidden');
+      modalOverlay2.classList.add('opacity-100');
+      modalContent2.classList.remove('hidden', 'opacity-0', 'scale-90');
+      modalContent2.classList.add('opacity-100', 'scale-100');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      modalContent2.classList.remove('opacity-100', 'scale-100');
+      modalContent2.classList.add('opacity-0', 'scale-90');
+      modalOverlay2.classList.remove('opacity-100');
+      modalOverlay2.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Event listener for opening the modal
+    openModalButton2.addEventListener('click', openModal);
+
+    // Event listener for closing the modal when clicking on the overlay
+    modalOverlay2.addEventListener('click', closeModal);
+
+    // Prevent clicks inside the modal content from closing the modal
+    modalContent2.addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
+
+
+  </script>
+  <!-- Second modal end -->
+
+
 
   <!-- Header start -->
   <header class="bg-[#FFCC00] pt-8 pb-7">
@@ -89,120 +279,6 @@
       </div>
     </div>
   </header>
-  <!-- Modal Overlay -->
-  <div id="modal-overlay" class="fixed inset-0 bg-black/50 opacity-0 transition-opacity duration-300 z-40 hidden">
-  </div>
-
-  <!-- Modal Content -->
-  <div id="modal-content"
-    class="fixed inset-0 flex items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
-    <div
-      class="bg-white border max-w-[1070px] w-full border-[#FFCC00] p-8 text-center transform transition-transform duration-300">
-      <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-8">Оставляйте телефон, и мы перезвоним
-        в рабочее время</h2>
-      <form class="flex flex-col gap-6 justify-center mx-auto" action="">
-        <input class="outline-none text-black font-medium text-xl text-center bg-transparent" type="text"
-          data-format="+* (***) ***-**-**" data-mask="+7 (___) ___-__-__" />
-        <button
-          class="mx-auto inline-flex max-w-[250px] justify-center text-black font-bold text-xl px-6 py-3 rounded-[20px] bg-[#FFCC00] hover:bg-[#e6b800]">Жду
-          звонка</button>
-      </form>
-    </div>
-  </div>
-
-  <script>
-    const modalContent = document.getElementById('modal-content');
-    const modalOverlay = document.getElementById('modal-overlay');
-    const openModalButton = document.getElementById('open-modal-tel');
-
-    function openModal() {
-      modalOverlay.classList.remove('hidden');
-      modalOverlay.classList.add('opacity-100');
-      modalContent.classList.remove('hidden', 'opacity-0', 'scale-90');
-      modalContent.classList.add('opacity-100', 'scale-100');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-      modalContent.classList.remove('opacity-100', 'scale-100');
-      modalContent.classList.add('opacity-0', 'scale-90');
-      modalOverlay.classList.remove('opacity-100');
-      modalOverlay.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-
-    openModalButton.addEventListener('click', openModal);
-
-    modalOverlay.addEventListener('click', closeModal);
-
-    modalContent.addEventListener('click', (event) => {
-      event.stopPropagation();
-    });
-
-
-  </script>
-  <script>
-    function doFormat(value, pattern, mask) {
-      const strippedValue = value.replace(/[^0-9]/g, "");
-
-      const chars = strippedValue.split('');
-
-
-      let count = 0;
-      let formatted = '';
-
-      for (let i = 0; i < pattern.length; i++) {
-        const char = pattern[i];
-        if (chars[count]) {
-          if (/\*/.test(char)) {
-            formatted += chars[count];
-            count++;
-          } else {
-            formatted += char;
-          }
-        }
-        else if (mask) {
-          const splittedMask = mask.split('');
-
-          if (splittedMask[i]) {
-            formatted += splittedMask[i];
-          }
-        }
-      }
-
-
-      return formatted;
-    }
-
-
-    document.querySelectorAll('[data-mask]').forEach(function (e) {
-
-
-      function format(elem) {
-        const val = doFormat(elem.value, elem.getAttribute('data-format'));
-        elem.value = doFormat(elem.value, elem.getAttribute('data-format'), elem.getAttribute('data-mask'));
-
-        if (elem.createTextRange) {
-          var range = elem.createTextRange();
-          range.move('character', val.length);
-          range.select();
-        } else if (elem.selectionStart) {
-          elem.focus();
-          elem.setSelectionRange(val.length, val.length);
-        }
-      }
-
-      e.addEventListener('keyup', function () {
-        format(e);
-      });
-
-      e.addEventListener('keydown', function () {
-        format(e);
-      });
-
-      format(e)
-    });
-  </script>
 
   <nav class="py-6">
     <div class="max-w-[1210px] px-5 mx-auto">
@@ -327,11 +403,14 @@
               fill="#873003" />
           </svg>
         </span>
-        <button class="button-shadow bg-[#873003] text-white font-bold text-xl py-6 px-[99px] rounded-[20px]">Получить
+        <button
+          class="button-shadow bg-[#873003] ml-auto mr-14 text-white font-bold text-xl py-6 px-[99px] rounded-[20px]"
+          id="open-modal-tel2">Получить
           консультацию</button>
       </div>
     </div>
   </section>
+
   <!-- What machines are compatible with? end -->
 
   <!-- Important facts start -->
