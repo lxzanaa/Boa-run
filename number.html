@@ -13,75 +13,75 @@
 </style>
 
 <body>
-        <!-- Modal Trigger Button -->
-        <button id="open-modal-tel2" class="px-4 py-2 bg-blue-500 text-white rounded">Open modal</button>
+    <!-- Modal Trigger Button -->
+    <button id="question-answer-button-1" class="px-4 py-2 bg-blue-500 text-white rounded">Open modal</button>
+    <button id="question-answer-button-2" class="px-4 py-2 bg-blue-500 text-white rounded">Open modal</button>
+    <button id="question-answer-button-3" class="px-4 py-2 bg-blue-500 text-white rounded">Open modal</button>
 
-        <!-- Modal Overlay -->
-        <div id="modal-overlay2" class="fixed inset-0 bg-black/50 opacity-0 transition-opacity duration-300 z-40 hidden">
+    <!-- Modal Overlay -->
+    <div id="question-answer-overlay"
+        class="fixed inset-0 bg-black/50 opacity-0 transition-opacity duration-300 z-40 hidden">
+    </div>
+
+    <!-- Modal Content -->
+    <div id="question-answer-modal"
+        class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex max-w-[1210px] w-full items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
+        <div class="text-center scale-90 max-w-[1210px]! w-full px-5 mx-auto bg-[#FFCC00] py-[60px]">
+            <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Ответим на все вопросы во <br> время
+                бесплатной консультации</h2>
+            <p class="text-[#873003] text-2xl mb-[50px]">Наш менеджер перезвонит вам в рабочее время.</p>
+
+            <form class="max-w-[444px] w-full mb-2.5 mx-auto">
+                <div class="grid grid-cols-2 gap-2.5 mb-10">
+                    <input class="py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+                        style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Имя*" required type="text">
+                    <input class="py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+                        style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Email" required type="email">
+                    <input required class="col-span-2 py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+                        style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Номер телефона*" type="number">
+                </div>
+                <button
+                    class="button-shadow py-6 text-white font-semibold text-lg rounded-[20px] bg-[#873003] w-full mb-2.5">Оставить
+                    заявку</button>
+                <p class="text-[#873003] font-light text-sm text-left">Нажимая на кнопку, я даю согласие на обработку
+                    <br> персональных данных
+                </p>
+            </form>
         </div>
+    </div>
 
-        <!-- Modal Content -->
-        <div id="modal-content2"
-            class="fixed  flex max-w-[1210px] w-full items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
-            <div class="text-center  scale-90 max-w-[1210px]! w-full px-5 mx-auto bg-[#FFCC00] py-[60px]" >
-                <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Ответим на все вопросы во <br> время
-                    бесплатной консультации</h2>
-                <p class="text-[#873003] text-2xl mb-[50px]">Наш менеджер перезвонит вам в рабочее время.</p>
-    
-                <form class="max-w-[444px] w-full mb-2.5 mx-auto">
-                    <div class="grid grid-cols-2 gap-2.5 mb-10">
-                        <input class=" py-3 px-5 rounded-[10px] outline-none text-black font-medium"
-                            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Имя*" required type="text">
-                        <input class=" py-3 px-5 rounded-[10px] outline-none text-black font-medium"
-                            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Email" required type="email">
-                        <input required class="col-span-2 py-3 px-5 rounded-[10px] outline-none text-black font-medium"
-                            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Номер телефона*" type="number">
-                    </div>
-                    <button
-                        class="button-shadow py-6 text-white font-semibold text-lg rounded-[20px] bg-[#873003] w-full mb-2.5">Оставить
-                        заявку</button>
-                        <p class="text-[#873003] font-light text-sm text-left">Нажимая на кнопку, я даю согласие на обработку <br> персональных данных</p>
-                </form>
-            </div>
-        </div>
-        <script>
-            // Get the modal elements
-            const modalContent = document.getElementById('modal-content2');
-            const modalOverlay = document.getElementById('modal-overlay2');
-            const openModalButton = document.getElementById('open-modal-tel2');
+    <script>
+        const questionAnswer = document.querySelector('#question-answer-modal');
+        const questionAnswerOverlay = document.querySelector('#question-answer-overlay');
+        const openModalButtons = document.querySelectorAll('[id^="question-answer-button"]');
 
-            // Function to open the modal
-            function openModal() {
-                modalOverlay.classList.remove('hidden');
-                modalOverlay.classList.add('opacity-100');
-                modalContent.classList.remove('hidden', 'opacity-0', 'scale-90');
-                modalContent.classList.add('opacity-100', 'scale-100');
-                document.body.style.overflow = 'hidden';
-            }
+        function openModalQues() {
+            questionAnswerOverlay.classList.remove('hidden');
+            questionAnswerOverlay.classList.add('opacity-100');
+            questionAnswer.classList.remove('hidden', 'opacity-0', 'scale-90');
+            questionAnswer.classList.add('opacity-100', 'scale-100');
+            document.body.style.overflow = 'hidden';
+        }
 
-            // Function to close the modal
-            function closeModal() {
-                modalContent.classList.remove('opacity-100', 'scale-100');
-                modalContent.classList.add('opacity-0', 'scale-90');
-                modalOverlay.classList.remove('opacity-100');
-                modalOverlay.classList.add('hidden');
-                document.body.style.overflow = '';
-            }
+        function closeModalQues() {
+            questionAnswer.classList.remove('opacity-100', 'scale-100');
+            questionAnswer.classList.add('opacity-0', 'scale-90');
+            questionAnswerOverlay.classList.remove('opacity-100');
+            questionAnswerOverlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
 
-            // Event listener for opening the modal
-            openModalButton.addEventListener('click', openModal);
+        openModalButtons.forEach(function (button) {
+            button.addEventListener('click', openModalQues);
+        });
 
-            // Event listener for closing the modal when clicking on the overlay
-            modalOverlay.addEventListener('click', closeModal);
+        questionAnswerOverlay.addEventListener('click', closeModalQues);
 
-            // Prevent clicks inside the modal content from closing the modal
-            modalContent.addEventListener('click', (event) => {
-                event.stopPropagation();
-            });
+        questionAnswer.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+    </script>
 
-
-        </script>
-    <!-- </div> -->
 
 </body>
 

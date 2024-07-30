@@ -612,6 +612,9 @@ video {
 .ml-auto {
   margin-left: auto;
 }
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
 .block {
   display: block;
 }
@@ -800,6 +803,12 @@ video {
 }
 .max-w-\[190px\] {
   max-width: 190px;
+}
+.max-w-\[1210px\] {
+  max-width: 1210px;
+}
+.max-w-\[444px\] {
+  max-width: 444px;
 }
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
@@ -1081,6 +1090,10 @@ video {
 .py-\[60px\] {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .pb-4 {
   padding-bottom: 1rem;

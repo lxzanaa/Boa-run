@@ -12,6 +12,36 @@
 </head>
 
 <body>
+  <!-- Modal Overlay -->
+  <div id="question-answer-overlay"
+    class="fixed inset-0 bg-black/50 opacity-0 transition-opacity duration-300 z-40 hidden">
+  </div>
+
+  <!-- Modal Content -->
+  <div id="question-answer-modal"
+    class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex max-w-[1210px] w-full items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
+    <div class="text-center scale-90 max-w-[1210px]! w-full px-5 mx-auto bg-[#FFCC00] md:py-[60px] py-10">
+      <h2 class="text-[#873003] font-bold lg:text-[45px] md:text-2xl text-xl lg:leading-[54.86px] md:mb-6 mb-3">Ответим
+        на все вопросы во <br> время
+        бесплатной консультации</h2>
+      <p class="text-[#873003] lg:text-2xl md:text-xl text-base mb-[50px]">Наш менеджер перезвонит вам в рабочее время.
+      </p>
+
+      <form class="lg:max-w-[444px] w-full mx-auto mb-2.5">
+        <div class="grid max-w-[236px] md:max-w-full mx-auto md:grid-cols-2 gap-2.5 mb-10">
+          <input class="w-full py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Имя*" required type="text">
+          <input class="w-full py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Email" required type="email">
+          <input required class="md:col-span-2 py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Номер телефона*" type="number">
+        </div>
+        <button
+          class="button-shadow md:py-6 py-5 text-white font-semibold text-lg rounded-[20px] bg-[#873003] md:w-full w-[302px] mx-auto justify-center flex">Оставить
+          заявку</button>
+      </form>
+    </div>
+  </div>
 
 
   <!-- Header start -->
@@ -133,12 +163,10 @@
 
   </div>
   <script>
-    // Get the modal elements
     const modalContent = document.getElementById('modal-content');
     const modalOverlay = document.getElementById('modal-overlay');
     const openModalButton = document.getElementById('open-modal-tel');
 
-    // Function to open the modal
     function openModal() {
       modalOverlay.classList.remove('hidden');
       modalOverlay.classList.add('opacity-100');
@@ -147,16 +175,14 @@
       document.body.style.overflow = 'hidden';
     }
 
-    // Function to close the modal
     function closeModal() {
       modalContent.classList.remove('opacity-100', 'scale-100');
-      modalContent.classList.add('opacity-0', 'scale-90');
+      modalContent.classList.add('opacity-0', 'scale-90', 'hidden');
       modalOverlay.classList.remove('opacity-100');
       modalOverlay.classList.add('hidden');
       document.body.style.overflow = '';
     }
 
-    // Event listener for opening the modal
     openModalButton.addEventListener('click', openModal);
 
     modalOverlay.addEventListener('click', closeModal);
@@ -164,8 +190,6 @@
     modalContent.addEventListener('click', (event) => {
       event.stopPropagation();
     });
-
-
   </script>
   <script>
     function doFormat(value, pattern, mask) {
@@ -368,7 +392,7 @@
               fill="#873003" />
           </svg>
         </span>
-        <button
+        <button id="question-answer-button-1"
           class="button-shadow bg-[#873003] md:ml-auto lg:mr-14 text-white font-bold text-xl py-6 md:px-[99px] px-11 rounded-[20px]"
           id="open-modal-tel2">Получить
           консультацию</button>
@@ -905,7 +929,7 @@
             заявленными моделями машинок.</p>
         </div>
       </div>
-      <button
+      <button id="question-answer-button-2"
         class="button-shadow py-6 text-white font-semibold md:text-lg text-base rounded-[20px] bg-[#873003] w-full md:max-w-[438px] max-w-[302px] mx-auto flex justify-center">Оформить
         заказ</button>
     </div>
@@ -1297,7 +1321,7 @@
           расскажет
           вам обо всех характеристиках ножей и уточнит
           подходят ли они к вашей модели машинки.</p>
-        <button
+        <button id="question-answer-button-3"
           class="button-shadow md:py-6 py-5 text-white font-semibold md:text-lg text-base rounded-[20px] bg-[#873003] inline-flex md:px-[100px] px-11">Получить
           консультацию</button>
       </div>
@@ -1346,23 +1370,24 @@
                 </svg>
               </span>
               +7 (495) 517-87-73</a></li>
-          <li><a class="flex  items-center lg:gap-2 text-[#833000] font-semibold md:text-lg text-base pl-5 lg:pl-0" href="tel: +7 (925) 517-87-73">
-            <span>
-              <svg class="lg:!block hidden" width="19" height="19" viewBox="0 0 19 19" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_1_13)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M6.23444 1.00929C6.44159 0.905248 6.66849 0.846416 6.90009 0.836695C7.1317 0.826974 7.36273 0.866585 7.57787 0.952905C7.79301 1.03922 7.98735 1.17028 8.14801 1.33739C8.30867 1.5045 8.43198 1.70384 8.50977 1.92221L9.42919 4.50295C9.59761 4.97627 9.53877 5.50086 9.27008 5.9255L8.1389 7.714C8.08053 7.80671 8.04704 7.91291 8.04166 8.02234C8.03628 8.13177 8.05919 8.24073 8.10819 8.33873L9.57247 11.2486C9.62201 11.3465 9.69598 11.43 9.78724 11.491C9.87849 11.5519 9.98393 11.5883 10.0934 11.5965L12.2028 11.7536C12.45 11.7723 12.6898 11.8468 12.9041 11.9715C13.1184 12.0962 13.3016 12.2678 13.44 12.4735L14.9649 14.7488C15.5131 15.5668 15.2204 16.6796 14.3419 17.1209L13.1173 17.7372C12.2409 18.1782 11.1608 18.1421 10.3498 17.5157C8.27328 15.9137 6.58483 13.8639 5.41021 11.519C4.22706 9.17866 3.58701 6.6016 3.5377 3.97966C3.51847 2.95631 4.13343 2.06653 5.00984 1.62552L6.23444 1.00929Z"
-                  fill="currentColor" />
-              </g>
-              <defs>
-                <clipPath id="clip0_1_13">
-                  <rect width="15" height="15" fill="white" transform="translate(4.70697) rotate(18.2882)" />
-                </clipPath>
-              </defs>
-            </svg>
-            </span>
-            +7 (925) 517-87-73</a></li>
+          <li><a class="flex  items-center lg:gap-2 text-[#833000] font-semibold md:text-lg text-base pl-5 lg:pl-0"
+              href="tel: +7 (925) 517-87-73">
+              <span>
+                <svg class="lg:!block hidden" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_13)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.23444 1.00929C6.44159 0.905248 6.66849 0.846416 6.90009 0.836695C7.1317 0.826974 7.36273 0.866585 7.57787 0.952905C7.79301 1.03922 7.98735 1.17028 8.14801 1.33739C8.30867 1.5045 8.43198 1.70384 8.50977 1.92221L9.42919 4.50295C9.59761 4.97627 9.53877 5.50086 9.27008 5.9255L8.1389 7.714C8.08053 7.80671 8.04704 7.91291 8.04166 8.02234C8.03628 8.13177 8.05919 8.24073 8.10819 8.33873L9.57247 11.2486C9.62201 11.3465 9.69598 11.43 9.78724 11.491C9.87849 11.5519 9.98393 11.5883 10.0934 11.5965L12.2028 11.7536C12.45 11.7723 12.6898 11.8468 12.9041 11.9715C13.1184 12.0962 13.3016 12.2678 13.44 12.4735L14.9649 14.7488C15.5131 15.5668 15.2204 16.6796 14.3419 17.1209L13.1173 17.7372C12.2409 18.1782 11.1608 18.1421 10.3498 17.5157C8.27328 15.9137 6.58483 13.8639 5.41021 11.519C4.22706 9.17866 3.58701 6.6016 3.5377 3.97966C3.51847 2.95631 4.13343 2.06653 5.00984 1.62552L6.23444 1.00929Z"
+                      fill="currentColor" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_13">
+                      <rect width="15" height="15" fill="white" transform="translate(4.70697) rotate(18.2882)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              +7 (925) 517-87-73</a></li>
         </ul>
         <div class="flex flex-col lg:mb-0 mb-6">
           <p class="text-[#833000] text-base md:text-lg">Пн-Пт, с 09.00 до 20.00</p>
@@ -1404,6 +1429,7 @@
   </footer>
   <!-- Footer end -->
 
+  <script src="./js/1-ask-ques.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
