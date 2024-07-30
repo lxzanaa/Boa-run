@@ -672,6 +672,9 @@ video {
 .h-10 {
   height: 2.5rem;
 }
+.h-\[150px\] {
+  height: 150px;
+}
 .max-h-\[100px\] {
   max-height: 100px;
 }
@@ -800,6 +803,9 @@ video {
 }
 .max-w-\[377px\] {
   max-width: 377px;
+}
+.max-w-\[233px\] {
+  max-width: 233px;
 }
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
@@ -942,6 +948,9 @@ video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.border-\[\] {
+  border-color: ;
 }
 .border-b-\[\#FFCC00\] {
   --tw-border-opacity: 1;
