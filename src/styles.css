@@ -72,4 +72,10 @@ button{
     .Strength_by_Rockwell .container{
         padding: 10px !important;
     }
+    .most_demanding_clients{
+        display: none !important;
+    }
+    .most_demanding_clients-open{
+        display: grid !important;
+    }
 }

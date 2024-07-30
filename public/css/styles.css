@@ -1364,6 +1364,12 @@ button{
     .Strength_by_Rockwell .container{
         padding: 10px !important;
     }
+    .most_demanding_clients{
+        display: none !important;
+    }
+    .most_demanding_clients-open{
+        display: grid !important;
+    }
 }
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
@@ -1540,10 +1546,6 @@ button{
     max-width: 100%;
   }
 
-  .md\:max-w-\[302px\] {
-    max-width: 302px;
-  }
-
   .md\:\!grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
   }
@@ -1635,11 +1637,6 @@ button{
   .md\:px-\[100px\] {
     padding-left: 100px;
     padding-right: 100px;
-  }
-
-  .md\:px-\[99px\] {
-    padding-left: 99px;
-    padding-right: 99px;
   }
 
   .md\:py-1 {
@@ -1813,6 +1810,10 @@ button{
     max-width: 444px;
   }
 
+  .lg\:max-w-\[448px\] {
+    max-width: 448px;
+  }
+
   .lg\:max-w-\[455px\] {
     max-width: 455px;
   }
@@ -1831,14 +1832,6 @@ button{
 
   .lg\:max-w-full {
     max-width: 100%;
-  }
-
-  .lg\:max-w-0 {
-    max-width: 0rem;
-  }
-
-  .lg\:max-w-\[448px\] {
-    max-width: 448px;
   }
 
   .lg\:grid-cols-3 {
@@ -1873,6 +1866,11 @@ button{
     padding: 2.75rem;
   }
 
+  .lg\:px-\[99px\] {
+    padding-left: 99px;
+    padding-right: 99px;
+  }
+
   .lg\:py-\[120px\] {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1881,11 +1879,6 @@ button{
   .lg\:py-\[60px\] {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-
-  .lg\:px-\[99px\] {
-    padding-left: 99px;
-    padding-right: 99px;
   }
 
   .lg\:pl-0 {
