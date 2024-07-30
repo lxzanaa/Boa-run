@@ -12,6 +12,7 @@
 
 <body>
 
+  <!-- Header start -->
   <header class="bg-[#FFCC00] pt-8 pb-7">
     <div class="max-w-[1210px] px-5 mx-auto flex items-center justify-between">
       <a href="index.html">
@@ -86,6 +87,7 @@
       </div>
     </div>
   </header>
+
   <nav class="py-6">
     <div class="max-w-[1210px] px-5 mx-auto">
       <ul class="flex items-center gap-5 justify-between pb-4 border-b border-b-[#FFCC00] max-w-[854px] w-full">
@@ -101,6 +103,9 @@
       </ul>
     </div>
   </nav>
+  <!-- Header end -->
+
+  <!-- Hero start --> 
   <section class="pt-6 pb-[60px]">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h1 class="text-black font-bold text-5xl mb-11">Оригинальные ножевые блоки BAORUN стандарт А5</h1>
@@ -164,6 +169,9 @@
       </div>
     </div>
   </section>
+  <!-- Hero end --> 
+
+   <!-- What machines are compatible with? start --> 
   <section class="bg-[#FFCC00] py-[60px]">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-14">С какими машинками совместимы</h2>
@@ -208,6 +216,9 @@
       </div>
     </div>
   </section>
+   <!-- What machines are compatible with? end --> 
+
+ <!-- Important facts start --> 
   <section class="pt-[60px] pb-20">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Важные факты о наших ножевых блоках</h2>
@@ -247,6 +258,9 @@
       </div>
     </div>
   </section>
+   <!-- Important facts end --> 
+
+    <!-- Catalog start --> 
   <section class="py-[60px] bg-[#F4F4F4]">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Каталог товаров</h2>
@@ -425,6 +439,9 @@
         дополнительная скидка 5%</i>
     </div>
   </section>
+  <!-- Catalog end --> 
+
+  <!-- Metal knives BaoRun start --> 
   <section class="py-[60px]">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-10">Металлические ножи BaoRun – ваше лучшее
@@ -475,6 +492,9 @@
       </div>
     </div>
   </section>
+  <!-- Metal knives BaoRun start --> 
+
+  <!-- Need further advice? start -->
   <section class="bg-[#FFCC00]">
     <div class="max-w-[1210px] px-5 mx-auto flex relative">
       <div class="py-[120px] max-w-[765px]">
@@ -502,7 +522,10 @@
       </div>
     </div>
   </section>
-<section class="py-[60px]">
+  <!-- Need further advice? end -->
+
+  <!-- Why the most demanding clients choose us start -->
+  <section class="py-[60px]">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-10">Почему нас выбирают самые требовательные
         клиенты</h2>
@@ -543,6 +566,9 @@
         заказ</button>
     </div>
   </section>
+  <!-- Why the most demanding clients choose us end -->
+
+  <!-- What our valued clients say about us start -->
   <section class="py-[60px] bg-[#F4F4F4]">
     <div class="max-w-[1210px] px-5 mx-auto">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-6">Что о нас говорят наши уважаемые клиенты
@@ -566,7 +592,7 @@
                 const video = document.getElementById('video');
                 const playPauseButton = document.getElementById('playPauseButton');
                 const playPauseIcon = document.getElementById('playPauseIcon');
-          
+
                 const togglePlayPause = () => {
                   if (video.paused) {
                     video.play();
@@ -580,25 +606,25 @@
                     playPauseButton.classList.remove('hidden');
                   }
                 };
-          
+
                 playPauseButton.addEventListener('click', togglePlayPause);
-          
+
                 video.addEventListener('click', () => {
                   togglePlayPause();
                   if (!video.paused) {
                     playPauseButton.classList.add('hidden');
                   }
                 });
-          
+
                 video.addEventListener('play', () => {
                   playPauseButton.classList.add('hidden');
                 });
-          
+
                 video.addEventListener('pause', () => {
                   playPauseButton.classList.remove('hidden');
                 });
               });
-          
+
             </script>
             <style>
               .play-icon::before {
@@ -647,6 +673,9 @@
       </div>
     </div>
   </section>
+  <!-- What our valued clients say about us end -->
+
+  <!-- Shipping and payment start -->
   <section class="py-[60px]">
     <div class="max-w-[1210px] px-5 mx-auto grid grid-cols-7 justify-between items-center gap-5">
       <div class="col-span-3">
@@ -684,6 +713,9 @@
       </div>
     </div>
   </section>
+  <!-- Shipping and payment end -->
+
+  <!-- FAQ start -->
   <section class="py-[60px]">
     <div class="max-w-[1210px] px-5 mx-auto ">
       <h2 class="text-[#873003] font-bold text-[45px] leading-[54.86px] mb-14">Часто задаваемые вопросы</h2>
@@ -792,7 +824,7 @@
             случае мы обменяем ваш товар или вернем деньги.
           </p>
         </div>
-        <div class="p-4 border-t-[2px] border-t-[#FFCC00] transition-all duration-300">
+        <div class="p-4 border-t-[2px] border-t-[#FFCC00] border-b-[#FFCC00] border-b-[2px] transition-all duration-300">
           <button class="faq-button flex items-center justify-between w-full text-left">
             <h4 class="text-black font-semibold text-xl">
               Как часто нужно менять ножи?
@@ -865,18 +897,96 @@
 
     </div>
   </section>
-<section class="py-[60px" >
-  <div class="max-w-[1210px] px-5 mx-auto bg-[#FFCC00] rounded-[50px] relative py-[60px] pl-[98px] flex" >
-        <div class="max-w-[612px]" >
-          <h2 class="text-[#873003] font-bold text-[45px] mb-5" >Остались вопросы? <span class="text-[35px] block" >Задайте их нашему менеджеру.</span></h2>
-          <p class="text-[#873003] text-lg mb-11 max-w-[448px]" >Он расскажет вам обо всех характеристиках ножей и уточнит подходят ли они к вашей модели машинки.</p>
-          <button class="button-shadow py-6 text-white font-semibold text-lg rounded-[20px] bg-[#873003] inline-flex px-[100px]">Получить консультацию</button>
+  <!-- FAQ end -->
+
+  <!-- Manager start -->
+  <section class="pt-[173px] pb-[60px]">
+    <div class="max-w-[1210px] px-5 mx-auto bg-[#FFCC00] rounded-[50px] relative py-[60px] pl-[98px] flex">
+      <div class="max-w-[612px]">
+        <h2 class="text-[#873003] font-bold text-[45px] mb-5">Остались вопросы? <span class="text-[35px] block">Задайте
+            их нашему менеджеру.</span></h2>
+        <p class="text-[#873003] text-lg mb-11 max-w-[448px]">Он расскажет вам обо всех характеристиках ножей и уточнит
+          подходят ли они к вашей модели машинки.</p>
+        <button
+          class="button-shadow py-6 text-white font-semibold text-lg rounded-[20px] bg-[#873003] inline-flex px-[100px]">Получить
+          консультацию</button>
+      </div>
+      <div>
+        <img class="absolute max-w-[455px] w-full bottom-0 right-3" src="./img/manager.png" alt="manager">
+      </div>
+    </div>
+  </section>
+  <!-- Manager end -->
+   
+  <!-- Footer start -->
+  <footer class="py-9 bg-[#FED007]">
+    <div class="max-w-[1210px] px-5 mx-auto flex justify-between">
+      <div>
+        <a href="#">
+          <img class="max-w-[303px] w-full mb-7" src="./img/footer/logo.svg" alt="">
+        </a>
+        <p class="text-black text-[8px] flex items-center gap-1"><span
+            class="uppercase w-2.5 h-2.5 rounded-full flex items-center justify-center border border-black">с</span>
+          2018-2024г</p>
+      </div>
+      <div class="flex gap-14" >
+        <ul>
+          <li><a class="flex items-center text-[#833000] font-semibold text-lg gap-4" href="tel: +7 (495) 517-87-73">
+              <span>
+                <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 2C0 1.46957 0.231785 0.960859 0.644365 0.585786C1.05694 0.210714 1.61652 0 2.2 0L8.8 0C9.38348 0 9.94306 0.210714 10.3556 0.585786C10.7682 0.960859 11 1.46957 11 2V14C11 14.5304 10.7682 15.0391 10.3556 15.4142C9.94306 15.7893 9.38348 16 8.8 16H2.2C1.61652 16 1.05694 15.7893 0.644365 15.4142C0.231785 15.0391 0 14.5304 0 14V2ZM6.6 13C6.6 12.7348 6.48411 12.4804 6.27782 12.2929C6.07153 12.1054 5.79174 12 5.5 12C5.20826 12 4.92847 12.1054 4.72218 12.2929C4.51589 12.4804 4.4 12.7348 4.4 13C4.4 13.2652 4.51589 13.5196 4.72218 13.7071C4.92847 13.8946 5.20826 14 5.5 14C5.79174 14 6.07153 13.8946 6.27782 13.7071C6.48411 13.5196 6.6 13.2652 6.6 13Z"
+                    fill="currentColor" />
+                </svg>
+              </span>
+               +7 (495) 517-87-73</a></li>
+          <li><a class="flex items-center text-[#833000] font-semibold text-lg gap-2" href="tel: +7 (925) 517-87-73">
+              <span>
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_13)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.23444 1.00929C6.44159 0.905248 6.66849 0.846416 6.90009 0.836695C7.1317 0.826974 7.36273 0.866585 7.57787 0.952905C7.79301 1.03922 7.98735 1.17028 8.14801 1.33739C8.30867 1.5045 8.43198 1.70384 8.50977 1.92221L9.42919 4.50295C9.59761 4.97627 9.53877 5.50086 9.27008 5.9255L8.1389 7.714C8.08053 7.80671 8.04704 7.91291 8.04166 8.02234C8.03628 8.13177 8.05919 8.24073 8.10819 8.33873L9.57247 11.2486C9.62201 11.3465 9.69598 11.43 9.78724 11.491C9.87849 11.5519 9.98393 11.5883 10.0934 11.5965L12.2028 11.7536C12.45 11.7723 12.6898 11.8468 12.9041 11.9715C13.1184 12.0962 13.3016 12.2678 13.44 12.4735L14.9649 14.7488C15.5131 15.5668 15.2204 16.6796 14.3419 17.1209L13.1173 17.7372C12.2409 18.1782 11.1608 18.1421 10.3498 17.5157C8.27328 15.9137 6.58483 13.8639 5.41021 11.519C4.22706 9.17866 3.58701 6.6016 3.5377 3.97966C3.51847 2.95631 4.13343 2.06653 5.00984 1.62552L6.23444 1.00929Z"
+                      fill="currentColor" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_13">
+                      <rect width="15" height="15" fill="white" transform="translate(4.70697) rotate(18.2882)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>+7 (925) 517-87-73</a></li>
+        </ul>
+        <div class="flex flex-col gap-2" >
+          <p class="text-[#833000] text-lg" >Пн-Пт, с 09.00 до 20.00</p>
+          <p class="text-[#833000] text-lg" >Сб-Вс, с 10.00 до 19.45</p>
+          <ul class="flex items-center gap-4" >
+            <li>
+              <a target="_blank" href="#">
+                <span>
+                  <img class="w-9 h-9 hover:scale-105 transition-all" src="./img/footer/1.svg" alt="">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <span>
+                  <img class="w-9 h-9 hover:scale-105 transition-all" src="./img/footer/2.svg" alt="">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <span>
+                  <img class="w-9 h-9 hover:scale-105 transition-all" src="./img/footer/3.svg" alt="">
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div>
-          <img class="absolute max-w-[455px] w-full bottom-0 right-3" src="./img/manager.png" alt="manager">
-        </div>
-  </div>
-</section>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
 
 
 </body>
