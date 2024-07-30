@@ -12,11 +12,12 @@
 </head>
 
 <body>
+
+   <!-- Question answer Modal start-->
   <!-- Modal Overlay -->
   <div id="question-answer-overlay"
     class="fixed inset-0 bg-black/50 opacity-0 transition-opacity duration-300 z-40 hidden">
   </div>
-
   <!-- Modal Content -->
   <div id="question-answer-modal"
     class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex max-w-[1210px] w-full items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
@@ -42,7 +43,31 @@
       </form>
     </div>
   </div>
+  <!-- Question answer Modal end -->
 
+  <div id="order-overlay"
+        class="fixed inset-0 bg-black/50 opacity-0 transition-opacity duration-300 z-40 hidden">
+    </div>
+  <div id="order-modal"
+    class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex max-w-[1210px] w-full items-center justify-center opacity-0 scale-90 transition-transform transition-opacity duration-300 z-50 hidden">
+    <div class="text-center scale-90 max-w-[1210px]! w-full px-5 mx-auto bg-[#FFCC00] md:py-[60px] py-10">
+      <h2 class="text-[#873003] font-bold lg:text-[45px] md:text-2xl text-xl lg:leading-[54.86px] md:mb-6 mb-3">Чтобы оформить заявку, <br class="md:!block hidden" > оставляйте ваши контакты</h2>
+      <p class="text-[#873003] lg:text-2xl md:text-xl text-base mb-[50px]">Наш менеджер перезвонит вам для уточнения деталей заказа.</p>
+
+      <form class="lg:max-w-[444px] w-full mx-auto mb-2.5">
+        <div class="grid max-w-[236px] md:max-w-full mx-auto md:grid-cols-2 gap-2.5 mb-10">
+          <input class="w-full py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Имя*" required type="text">
+          <input class="w-full py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Email" required type="email">
+          <input required class="md:col-span-2 py-3 px-5 rounded-[10px] outline-none text-black font-medium"
+            style="box-shadow: 0px 4px 4px 0px #00000040;" placeholder="Номер телефона*" type="number">
+        </div>
+        <button
+          class="button-shadow md:py-6 py-5 text-white font-semibold text-lg rounded-[20px] bg-[#873003] md:w-full w-[302px] mx-auto justify-center flex">Отправить</button>
+      </form>
+    </div>
+  </div>
 
   <!-- Header start -->
   <header class="bg-[#FFCC00] pt-8 pb-7">
@@ -337,7 +362,7 @@
               <p class="text-black md:text-lg text-base text-center">минуты</p>
             </li>
           </ul>
-          <button
+          <button id="order-button-1"
             class="button-shadow text-white font-bold text-lg py-5 rounded-[20px] bg-[#873003] md:w-full px-[60px]">Заказать
             со
             скидкой</button>
@@ -382,7 +407,7 @@
         слотом ножа стандарта А5</p>
       <div class="lg:flex items-center relative text-center">
         <p
-          class="lg:text-black text-[#873003] lg:text-left text-center font-semibold md:text-2xl text-xl max-w-[602px] w-full lg:mb-0 mb-6">
+          class="lg:text-black text-[#873003] lg:text-left text-center font-semibold md:text-2xl text-xl max-w-[602px] lg:mx-0 mx-auto w-full lg:mb-0 mb-6">
           Не нашли в списке вашу модель машинки? Оставляйте контакты, мы позвоним
           и проконсультируем бесплатно.</p>
         <span class="absolute lg:!block hidden right-[507px] top-[51px]">
@@ -480,7 +505,7 @@
             <p class="text-black font-medium text-xl">5 000 руб.</p>
           </div>
           <div>
-            <button
+            <button id="order-button-1"
               class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
               заказ</button>
           </div>
@@ -501,7 +526,7 @@
             <p class="text-black font-medium text-xl">5 000 руб.</p>
           </div>
           <div>
-            <button
+            <button id="order-button-1"
               class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
               заказ</button>
           </div>
@@ -522,7 +547,7 @@
             <p class="text-black font-medium text-xl">5 000 руб.</p>
           </div>
           <div>
-            <button
+            <button id="order-button-1"
               class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
               заказ</button>
           </div>
@@ -543,7 +568,7 @@
             <p class="text-black font-medium text-xl">5 000 руб.</p>
           </div>
           <div>
-            <button
+            <button id="order-button-1"
               class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
               заказ</button>
           </div>
@@ -564,7 +589,7 @@
             <p class="text-black font-medium text-xl">5 000 руб.</p>
           </div>
           <div>
-            <button
+            <button id="order-button-1"
               class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
               заказ</button>
           </div>
@@ -585,7 +610,7 @@
             <p class="text-black font-medium text-xl">5 000 руб.</p>
           </div>
           <div>
-            <button
+            <button id="order-button-1"
               class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
               заказ</button>
           </div>
@@ -606,7 +631,7 @@
             <p class="text-black font-medium text-xl">5 000 руб.</p>
           </div>
           <div>
-            <button
+            <button id="order-button-1"
               class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
               заказ</button>
           </div>
@@ -627,7 +652,7 @@
             <p class="text-black font-medium text-xl">5 000 руб.</p>
           </div>
           <div>
-            <button
+            <button id="order-button-1"
               class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
               заказ</button>
           </div>
@@ -652,7 +677,7 @@
                 <p class="text-black font-medium text-xl">5 000 руб.</p>
               </div>
               <div>
-                <button
+                <button id="order-button-1"
                   class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
                   заказ</button>
               </div>
@@ -675,7 +700,7 @@
                 <p class="text-black font-medium text-xl">5 000 руб.</p>
               </div>
               <div>
-                <button
+                <button id="order-button-1"
                   class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
                   заказ</button>
               </div>
@@ -698,7 +723,7 @@
                 <p class="text-black font-medium text-xl">5 000 руб.</p>
               </div>
               <div>
-                <button
+                <button id="order-button-1"
                   class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
                   заказ</button>
               </div>
@@ -721,7 +746,7 @@
                 <p class="text-black font-medium text-xl">5 000 руб.</p>
               </div>
               <div>
-                <button
+                <button id="order-button-1"
                   class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
                   заказ</button>
               </div>
@@ -850,7 +875,7 @@
   <!-- Need further advice? start -->
   <section class="bg-[#FFCC00]">
     <div class="max-w-[1200px] px-2.5 mx-auto lg:flex relative">
-      <div class="lg:py-[120px] py-5 max-w-[765px] text-left mx-auto">
+      <div class="lg:py-[120px] py-5 max-w-[765px] text-left mx-auto lg:mx-0">
         <h2
           class="text-[#873003] font-bold md:text-[45px] text-2xl md:leading-[54.86px] md:mb-8 mb-4 text-center md:text-left">
           Требуется дополнительная консультация?
@@ -929,7 +954,7 @@
             заявленными моделями машинок.</p>
         </div>
       </div>
-      <button id="question-answer-button-2"
+      <button id="order-button-1"
         class="button-shadow py-6 text-white font-semibold md:text-lg text-base rounded-[20px] bg-[#873003] w-full md:max-w-[438px] max-w-[302px] mx-auto flex justify-center">Оформить
         заказ</button>
     </div>
@@ -1392,7 +1417,7 @@
         <div class="flex flex-col lg:mb-0 mb-6">
           <p class="text-[#833000] text-base md:text-lg">Пн-Пт, с 09.00 до 20.00</p>
           <p class="text-[#833000] text-base md:text-lg mb-5">Сб-Вс, с 10.00 до 19.45</p>
-          <ul class="max-w-[189px] mx-auto flex items-center gap-4">
+          <ul class="max-w-[189px] lg:max-w-full lg:mx-0 mx-auto flex items-center gap-4">
             <li>
               <a target="_blank" href="#">
                 <span>
@@ -1429,7 +1454,7 @@
   </footer>
   <!-- Footer end -->
 
-  <script src="./js/1-ask-ques.js"></script>
+  <script src="./js/modal.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
