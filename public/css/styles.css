@@ -539,6 +539,15 @@ video {
 .top-\[51px\] {
   top: 51px;
 }
+.right-\[173px\] {
+  right: 173px;
+}
+.right-\[65px\] {
+  right: 65px;
+}
+.right-\[-65px\] {
+  right: -65px;
+}
 .z-10 {
   z-index: 10;
 }
@@ -952,6 +961,10 @@ video {
 .py-\[60px\] {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
 }
 .pb-20 {
   padding-bottom: 5rem;
