@@ -702,6 +702,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[258px\] {
+  height: 258px;
+}
 .max-h-\[100px\] {
   max-height: 100px;
 }
@@ -1500,6 +1503,10 @@ button{
 
   .md\:h-\[494px\] {
     height: 494px;
+  }
+
+  .md\:h-\[324px\] {
+    height: 324px;
   }
 
   .md\:min-h-\[236px\] {
