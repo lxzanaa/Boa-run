@@ -14,10 +14,19 @@
   .most_demanding_clients-open {
     display: none !important;
   }
+  .boa-run-miniMobile{
+      display: none !important;
+    }
 
   @media (max-width: 455px) {
     .most_demanding_clients-open {
       display: grid !important;
+    }
+    .boa-run-miniMobile{
+      display: flex !important;
+    }
+    .boa-runMobile{
+      display: none !important;
     }
   }
 </style>
@@ -813,96 +822,88 @@
       </div>
       <div class="swiper mySwiper2 mb-5 md:hidden block relative">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="max-w-[223px] w-full ">
-              <div class="relative max-w-[223px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
-                style="box-shadow: 0px 4px 4px 0px #00000040;">
-                <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
-                  src="./img/catalog/1.png" alt="product">
-                <div
-                  class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
-                  -30%</div>
-              </div>
-              <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
-              <p class="text-black text-sm mb-4">Арт: 18511</p>
-              <div class="flex items-center gap-2 justify-between mb-5">
-                <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
-                <p class="text-black font-medium text-xl">5 000 руб.</p>
-              </div>
-              <div>
-                <button id="order-button-1"
-                  class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
-                  заказ</button>
-              </div>
+          <div class="swiper-slide max-w-[223px] w-full ">
+            <div class="relative max-w-[223px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
+              style="box-shadow: 0px 4px 4px 0px #00000040;">
+              <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
+                src="./img/catalog/1.png" alt="product">
+              <div
+                class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
+                -30%</div>
+            </div>
+            <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
+            <p class="text-black text-sm mb-4">Арт: 18511</p>
+            <div class="flex items-center gap-2 justify-between mb-5">
+              <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
+              <p class="text-black font-medium text-xl">5 000 руб.</p>
+            </div>
+            <div>
+              <button id="order-button-1"
+                class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
+                заказ</button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="max-w-[223px] w-full ">
-              <div class="relative max-w-[223px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
-                style="box-shadow: 0px 4px 4px 0px #00000040;">
-                <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
-                  src="./img/catalog/1.png" alt="product">
-                <div
-                  class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
-                  -30%</div>
-              </div>
-              <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
-              <p class="text-black text-sm mb-4">Арт: 18511</p>
-              <div class="flex items-center gap-2 justify-between mb-5">
-                <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
-                <p class="text-black font-medium text-xl">5 000 руб.</p>
-              </div>
-              <div>
-                <button id="order-button-1"
-                  class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
-                  заказ</button>
-              </div>
+          <div class="swiper-slide max-w-[223px] w-full ">
+            <div class="relative max-w-[223px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
+              style="box-shadow: 0px 4px 4px 0px #00000040;">
+              <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
+                src="./img/catalog/1.png" alt="product">
+              <div
+                class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
+                -30%</div>
+            </div>
+            <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
+            <p class="text-black text-sm mb-4">Арт: 18511</p>
+            <div class="flex items-center gap-2 justify-between mb-5">
+              <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
+              <p class="text-black font-medium text-xl">5 000 руб.</p>
+            </div>
+            <div>
+              <button id="order-button-1"
+                class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
+                заказ</button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="max-w-[223px] w-full ">
-              <div class="relative max-w-[223px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
-                style="box-shadow: 0px 4px 4px 0px #00000040;">
-                <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
-                  src="./img/catalog/1.png" alt="product">
-                <div
-                  class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
-                  -30%</div>
-              </div>
-              <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
-              <p class="text-black text-sm mb-4">Арт: 18511</p>
-              <div class="flex items-center gap-2 justify-between mb-5">
-                <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
-                <p class="text-black font-medium text-xl">5 000 руб.</p>
-              </div>
-              <div>
-                <button id="order-button-1"
-                  class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
-                  заказ</button>
-              </div>
+          <div class="swiper-slide max-w-[223px] w-full ">
+            <div class="relative max-w-[223px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
+              style="box-shadow: 0px 4px 4px 0px #00000040;">
+              <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
+                src="./img/catalog/1.png" alt="product">
+              <div
+                class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
+                -30%</div>
+            </div>
+            <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
+            <p class="text-black text-sm mb-4">Арт: 18511</p>
+            <div class="flex items-center gap-2 justify-between mb-5">
+              <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
+              <p class="text-black font-medium text-xl">5 000 руб.</p>
+            </div>
+            <div>
+              <button id="order-button-1"
+                class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
+                заказ</button>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="max-w-[223px] w-full ">
-              <div class="relative max-w-[223px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
-                style="box-shadow: 0px 4px 4px 0px #00000040;">
-                <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
-                  src="./img/catalog/1.png" alt="product">
-                <div
-                  class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
-                  -30%</div>
-              </div>
-              <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
-              <p class="text-black text-sm mb-4">Арт: 18511</p>
-              <div class="flex items-center gap-2 justify-between mb-5">
-                <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
-                <p class="text-black font-medium text-xl">5 000 руб.</p>
-              </div>
-              <div>
-                <button id="order-button-1"
-                  class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
-                  заказ</button>
-              </div>
+          <div class="swiper-slide max-w-[223px] w-full ">
+            <div class="relative max-w-[223px] h-[230px] w-full mb-4 rounded-[10px] overflow-hidden"
+              style="box-shadow: 0px 4px 4px 0px #00000040;">
+              <img class="w-full h-full object-cover rounded-[10px] transition-transform duration-300 hover:scale-105"
+                src="./img/catalog/1.png" alt="product">
+              <div
+                class="absolute top-5 left-5 text-white font-medium italic flex items-center justify-center text-base text-center w-12 h-12 rounded-md bg-[#873003]">
+                -30%</div>
+            </div>
+            <p class="text-black font-semibold text-lg mb-5">Ножевой блок BAORUN металл 0.2 мм, стандарт А5</p>
+            <p class="text-black text-sm mb-4">Арт: 18511</p>
+            <div class="flex items-center gap-2 justify-between mb-5">
+              <p class="text-[#873003] font-bold text-xl">1 900 руб.</p>
+              <p class="text-black font-medium text-xl">5 000 руб.</p>
+            </div>
+            <div>
+              <button id="order-button-1"
+                class="button-shadow inline-flex w-full bg-[#873003] rounded-[10px] justify-center text-white font-semibold text-xs py-1.5 ">Оформить
+                заказ</button>
             </div>
           </div>
         </div>
@@ -968,7 +969,7 @@
           </div>
         </div>
       </div>
-      <div class="md:hidden block">
+      <div class="boa-runMobile md:hidden block">
         <h3 class="text-black font-bold text-xl mb-4">Удобство использования</h3>
         <div class="grid grid-cols-2 gap-4 mb-2.5">
           <img style="aspect-ratio: 1 / 0.60;"
@@ -1004,6 +1005,53 @@
           аккуратный срез.
           BaoRun – это гарантия качества. Вы получите удовольствие от работы с профессиональными инструментами этой
           марки, а главное – великолепный результат! </p>
+      </div>
+      <div class="boa-run-miniMobile flex flex-col gap-8 justify-between">
+        <div class="flex flex-col lg:gap-8 gap-4 max-w-[369px] w-full">
+          <h3 class="text-black font-bold lg:text-2xl text-xl">Удобство использования</h3>
+          <div class="max-w-[233px] max-h-[150px] mx-auto w-full h-full rounded-[20px] object-cover border border-[#FFCC00]">
+            <img class="w-full h-full object-cover rounded-[20px]" src="./img/products/1.png" alt="BaoRun">
+          </div>
+          <p class="text-black lg:text-lg text-sm ">Ножевые блоки BaoRun спроектированы так, чтобы пользоваться ими было
+            комфортно.
+            Они мало весят, их несложно
+            снять для замены или очистки.
+            Популярный стандарт крепления ножей А5 совместим со многими моделями машинок. </p>
+          <div class="max-w-[233px] max-h-[150px] mx-auto w-full h-full rounded-[20px] object-cover border border-[#FFCC00]">
+            <img class="w-full h-full object-cover rounded-[20px]" src="./img/products/3.png" alt="BaoRun">
+          </div>
+        </div>
+        <div class="flex flex-col lg:gap-8 gap-4 max-w-[369px] w-full">
+          <h3 class="text-black font-bold lg:text-2xl text-xl">Надежный бренд</h3>
+          <p class="text-black lg:text-lg text-sm ">
+            BaoRun – известный немецкий бренд с производством в Китае с соблюдением оригинальных технологий. Проверенная
+            марка давно завоевала доверие у профессионалов в области груминга.
+            Металл ножей BaoRun хорошо держит заточку, изделия отличаются прочностью и долгим сроком службы при
+            относительно невысокой стоимости. Этим ножи BaoRun выгодно выделяются среди аналогичных товаров.
+          </p>
+          <div class="max-w-[100px] max-h-[100px] w-full h-full rounded-[20px] object-cover border border-[#FFCC00]">
+            <img class="w-full h-full object-cover rounded-[20px]" src="./img/products/dog.png" alt="dog">
+          </div>
+          <h3 class="text-black font-bold lg:text-2xl text-xl">Комфорт для животных</h3>
+          <p class="text-black lg:text-lg text-sm">Ножевые блоки рассчитаны на различные типы шерсти, мы поможем
+            подобрать
+            подходящую модель. Ножи BaoRun не доставляют никаких болезненных ощущений домашнему питомцу, бережно
+            обращаяся с его кожей. </p>
+        </div>
+        <div class="flex flex-col lg:gap-8 gap-4 max-w-[369px] w-full">
+          <h3 class="text-black font-bold lg:text-2xl text-xl">Качественный результат</h3>
+          <div class="max-w-[233px] max-h-[150px] mx-auto w-full h-full rounded-[20px] object-cover border border-[#FFCC00]">
+            <img class="w-full h-full object-cover rounded-[20px]" src="./img/products/2.png" alt="BaoRun">
+          </div>
+          <p class="text-black lg:text-lg text-sm ">Сменные ножи BaoRun хорошо прочесывают шерсть, обеспечивая чистый
+            аккуратный
+            срез.
+            BaoRun – это гарантия качества. Вы получите удовольствие от работы с профессиональными инструментами этой
+            марки, а главное – великолепный результат!</p>
+          <div class="max-w-[233px] max-h-[150px] mx-auto w-full h-full rounded-[20px] object-cover border border-[#FFCC00]">
+            <img class="w-full h-full object-cover rounded-[20px]" src="./img/products/4.png" alt="BaoRun">
+          </div>
+        </div>
       </div>
     </div>
   </section>
