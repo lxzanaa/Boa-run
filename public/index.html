@@ -10,6 +10,17 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+<style>
+  .most_demanding_clients-open {
+    display: none !important;
+  }
+
+  @media (max-width: 455px) {
+    .most_demanding_clients-open {
+      display: grid !important;
+    }
+  }
+</style>
 
 <body>
 
@@ -416,21 +427,21 @@
           <p class="text-black md:text-lg text-base">Oster 97, Golden A5, A6 Slim Pet, Max Pet</p>
         </div>
         <div
-        class="col-span-2 md:bg-white bg-[#FFCC00] md:min-h-[236px] min-h-[158px] w-full lg:p-11 md:p-5 p-2.5 rounded-[20px]">
-        <h3 class="text-black font-bold md:text-2xl text-xl md:mb-6 mb-1.5">Машинки Oster</h3>
-        <p class="text-black md:text-lg text-base">Pro Pet (MBG2), Ultra Edge (AGC 2), EXCEL 2-SPEED (SMC-2),
-          PowerGroom+ (AGRV),
-          Supra ZR (DBLC), Pulse ZR (DBLC), Show Edge (FHC), Super AGR+, Vet Pak</p>
-      </div>
-        <div class="md:bg-white bg-[#FFCC00] max-w-[367px] min-h-[158px] w-full lg:p-11 md:p-5 p-2.5 rounded-[20px]">
+          class="col-span-2 md:bg-white bg-[#FFCC00] md:min-h-[236px] min-h-[158px] w-full lg:p-11 md:p-5 p-2.5 rounded-[20px]">
           <h3 class="text-black font-bold md:text-2xl text-xl md:mb-6 mb-1.5">Машинки Oster</h3>
-          <p class="text-black md:text-lg text-base">Oster 97, Golden A5, A6 Slim Pet, Max Pet</p>
+          <p class="text-black md:text-lg text-base">Pro Pet (MBG2), Ultra Edge (AGC 2), EXCEL 2-SPEED (SMC-2),
+            PowerGroom+ (AGRV),
+            Supra ZR (DBLC), Pulse ZR (DBLC), Show Edge (FHC), Super AGR+, Vet Pak</p>
         </div>
         <div class="md:bg-white bg-[#FFCC00] max-w-[367px] min-h-[158px] w-full lg:p-11 md:p-5 p-2.5 rounded-[20px]">
           <h3 class="text-black font-bold md:text-2xl text-xl md:mb-6 mb-1.5">Машинки Oster</h3>
           <p class="text-black md:text-lg text-base">Oster 97, Golden A5, A6 Slim Pet, Max Pet</p>
         </div>
-      
+        <div class="md:bg-white bg-[#FFCC00] max-w-[367px] min-h-[158px] w-full lg:p-11 md:p-5 p-2.5 rounded-[20px]">
+          <h3 class="text-black font-bold md:text-2xl text-xl md:mb-6 mb-1.5">Машинки Oster</h3>
+          <p class="text-black md:text-lg text-base">Oster 97, Golden A5, A6 Slim Pet, Max Pet</p>
+        </div>
+
       </div>
       <p class="max-w-[469px] ml-auto md:pr-[66px] text-black font-bold text-2xl text-right mb-10">и другими машинками
         со
@@ -494,7 +505,7 @@
           <p class="text-black font-medium md:text-lg text-base">Неподвижное лезвие изготовлено из углеродистой стали
           </p>
           <div
-           class="mini-con absolute md:right-6 right-0 text-black font-medium  text-sm leading-[17.07px] md:p-2 py-1 px-2 rounded-[10px] bg-[#FFCC00]">
+            class="mini-con absolute md:right-6 right-0 text-black font-medium  text-sm leading-[17.07px] md:p-2 py-1 px-2 rounded-[10px] bg-[#FFCC00]">
             Прочность по <br class="md:!hidden block">
             Роквеллу 59</div>
         </div>
@@ -502,7 +513,7 @@
           class="container relative  md:py-3.5 py-2.5 md:px-6 px-3.5 max-w-[570px] w-full border-[3px] border-[#873003] rounded-[20px]">
           <p class="text-black font-medium md:text-lg text-base">Подвижное лезвие изготовлено из нержавеющей стали</p>
           <div
-           class="mini-con absolute md:right-6 right-0 text-black font-medium  text-sm leading-[17.07px] md:p-2 py-1 px-2 rounded-[10px] bg-[#FFCC00]">
+            class="mini-con absolute md:right-6 right-0 text-black font-medium  text-sm leading-[17.07px] md:p-2 py-1 px-2 rounded-[10px] bg-[#FFCC00]">
             Прочность по <br class="md:!hidden block">
             Роквеллу 62</div>
         </div>
@@ -800,7 +811,7 @@
           }
         </style>
       </div>
-      <div class="swiper mySwiper2 mb-5 md:!hidden block relative">
+      <div class="swiper mySwiper2 mb-5 md:hidden block relative">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="max-w-[223px] w-full ">
@@ -1240,7 +1251,8 @@
   <section class="md:py-[60px] py-5">
     <div class="max-w-[1200px] px-2.5 mx-auto grid md:!grid-cols-7 justify-between items-center gap-5">
       <div class="col-span-3">
-        <h2 class="text-[#873003] px-2.5 font-bold md:text-[45px] text-2xl md:leading-[54.86px] mb-4">Доставка и оплата</h2>
+        <h2 class="text-[#873003] px-2.5 font-bold md:text-[45px] text-2xl md:leading-[54.86px] mb-4">Доставка и оплата
+        </h2>
         <p class="text-black font-medium md:text-2xl text-xl md:mb-0 mb-4 px-2.5">Удобные виды доставки</p>
         <div class="relative">
           <div
@@ -1631,12 +1643,12 @@
       },
     });
   </script>
-    <script>
-      var swiper = new Swiper(".mySwiper2", {
-        slidesPerView: "auto",
-        spaceBetween: 1,
-      });
-    </script>
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 1.5,
+      spaceBetween: 15,
+    });
+  </script>
 </body>
 
 </html>

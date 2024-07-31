@@ -47,6 +47,7 @@ button {
 .mySwiper2{
     display: none !important;
 }
+
 @media (max-width: 455px) {
     .header-content {
         display: flex;
