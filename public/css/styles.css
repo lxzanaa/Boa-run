@@ -705,11 +705,11 @@ video {
 .max-h-\[100px\] {
   max-height: 100px;
 }
-.max-h-\[234px\] {
-  max-height: 234px;
-}
 .max-h-\[150px\] {
   max-height: 150px;
+}
+.max-h-\[234px\] {
+  max-height: 234px;
 }
 .min-h-\[158px\] {
   min-height: 158px;
@@ -777,6 +777,9 @@ video {
 .max-w-\[223px\] {
   max-width: 223px;
 }
+.max-w-\[233px\] {
+  max-width: 233px;
+}
 .max-w-\[236px\] {
   max-width: 236px;
 }
@@ -842,9 +845,6 @@ video {
 }
 .max-w-\[854px\] {
   max-width: 854px;
-}
-.max-w-\[233px\] {
-  max-width: 233px;
 }
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
@@ -1339,7 +1339,16 @@ button {
 .machines_are_compatible-open {
     display: none !important;
 }
-.mySwiper2{
+
+.mySwiper2 {
+    display: none !important;
+}
+
+.boa-run-miniMobile {
+    display: none !important;
+}
+
+.most_demanding_clients-open {
     display: none !important;
 }
 
@@ -1395,12 +1404,21 @@ button {
 
     .Pickup_points {
         display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important; 
     }
-    .mySwiper1{
+
+    .mySwiper1 {
         display: none !important;
     }
-    .mySwiper2{
+
+    .mySwiper2 {
+        display: block !important;
+    }
+
+    .boa-runMobile {
+        display: none !important;
+    }
+
+    .boa-run-miniMobile {
         display: block !important;
     }
 }

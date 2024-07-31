@@ -214,7 +214,7 @@
   <script>
     const modalContent = document.getElementById('modal-content');
     const modalOverlay = document.getElementById('modal-overlay');
-    const openModalButton = document.getElementById('open-modal-tel');
+    const openModalButton = document.querySelectorAll('#open-modal-tel');
 
     function openModal() {
       modalOverlay.classList.remove('hidden');
@@ -232,7 +232,9 @@
       document.body.style.overflow = '';
     }
 
-    openModalButton.addEventListener('click', openModal);
+    openModalButton.forEach(function(item){
+      item.addEventListener('click', openModal);
+    })
 
     modalOverlay.addEventListener('click', closeModal);
 
